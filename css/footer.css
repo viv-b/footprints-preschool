@@ -1,0 +1,16 @@
+.footer {
+    background: #222;
+}
+.footer * {
+    color: #fff;
+}
+.footer p {
+    margin-bottom: 0;
+}
+#facebook-footer {
+    display: block;
+    margin-bottom: 10px;
+}
+#facebook-footer .fa {
+    font-size: 3.5rem;
+}

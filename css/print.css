@@ -1,0 +1,18 @@
+@media print {
+  
+  a:link:after, a:visited:after { 
+    content:""; 
+  }
+  img {
+    max-width: 100% !important;
+  }
+  button,
+  .button {
+      border: solid 1px #666 !important;
+      color: #666 !important;
+  }
+  .print-logo {
+    display: block;
+  }
+
+}

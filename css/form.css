@@ -1,0 +1,30 @@
+form {
+    margin-top: -15px;
+}
+#contact-form {
+    max-width: 570px;
+}
+
+form input {
+    margin-bottom: 20px !important;
+}
+
+form textarea {
+    min-height: 175px;
+}
+
+form label {
+    font-size: 1rem;
+}
+
+@media screen and (min-width: 40em) {
+    
+}
+
+@media screen and (min-width: 64em) {
+   
+}
+
+@media screen and (min-width: 75em) {
+    
+}

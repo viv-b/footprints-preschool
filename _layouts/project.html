@@ -1,0 +1,40 @@
+---
+layout: default
+---
+
+{% include heading-subpage.html section_url="/projects/" section_title="Projects" collection=site.projects %}
+
+<div class="wrapper-padding">
+    <div class="grid-container padding-bottom">
+        <div class="grid-x grid-margin-x">
+            
+            <div class="medium-7 large-6 cell">
+                {% if page.location %}
+                <p><strong>Location:</strong> {{ page.location }}</p>
+                {% endif %}
+                {{ content }}
+            </div>
+            
+            <div class="medium-5 large-offset-1 large-5 cell">
+                {% if page.summary_image %}
+                   <p><img src="{{ site.baseurl }}{{ page.summary_image }}" alt="{{ page.title }}" /></p>
+                {% endif %}
+            </div>
+        
+        </div>
+    </div>
+</div>
+
+{% if page.photos[0].gallery_image %}
+ <div class="wrapper-padding bgd-white">
+    <div class="grid-container">
+        <div class="grid-x grid-margin-x">
+                
+            <div class="cell">
+                 {% include lightbox.html small="3" medium="4" large="6" %}
+            </div>
+                
+        </div>
+    </div>
+</div>
+{% endif %}

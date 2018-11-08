@@ -1,0 +1,52 @@
+---
+title: News
+meta_title: 'Underground Drilling, Coal and Mineral Exploration Drilling'
+description: >-
+  A comprehensive drilling contracting service providing experienced staff,
+  purpose built rigs, custom built camp and rig huts, helicopter support, and
+  management of Health, Safety & Environmental risks.
+heading:
+hero_image: /uploads/hero-images/south-island-landscape.jpg
+_section_id: blog
+---
+
+{% include heading.html %}
+
+<div class="wrapper-padding">
+    <div class="grid-container">
+        
+        <div class="grid-x grid-margin-x">
+            
+            <div class="large-8 cell">
+            
+                <p class="editor-link"><a href="cloudcannon:collections/_posts"><strong>&#9998;</strong> Add Post</a></p>
+                
+                <div class="blog-posts">
+                    {% include list-posts.html posts=paginator.posts %}
+                </div>
+            
+                {% if paginator.total_pages > 1 %}
+           
+                <div class="pagination">
+                    {% if paginator.previous_page %}
+                        <a href="{{ site.baseurl }}{{ paginator.previous_page_path }}" class="previous btn">&larr; Newer posts</a>
+                    {% endif %}
+    
+                    <span class="page_number ">{{ paginator.page }} of {{ paginator.total_pages }}</span>
+    
+                    {% if paginator.next_page %}
+                        <a href="{{ site.baseurl }}{{ paginator.next_page_path }}" class="next btn">Older posts &rarr;</a>
+                    {% endif %}
+                </div>
+        
+                {% endif %}
+                
+            </div>
+            
+            <div class="large-4 cell">
+                {% include blog-navigation.html %}
+            </div>
+            
+        </div>
+    </div>
+</div>

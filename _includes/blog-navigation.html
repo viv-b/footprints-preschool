@@ -1,0 +1,8 @@
+<div class="callout sidebar">
+    <h3>Latest Posts</h3>
+    <ul>
+    {% for post in site.posts | limit: 10 %}
+        <li class="{% if forloop.last %}last{% endif %}"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+    </ul>
+</div>

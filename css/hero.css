@@ -1,0 +1,25 @@
+.hero {
+    position: relative;
+    background-color: #eee;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 290px;
+}
+
+
+
+
+/* Medium and up */
+@media screen and (min-width: 40em) {
+    
+}
+
+/* Large and up */
+@media screen and (min-width: 64em) {
+    
+    .hero {
+        height: 45vh;
+        /* margin-top: 100px; */
+    }
+}

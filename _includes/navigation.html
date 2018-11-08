@@ -1,0 +1,21 @@
+<ul class="menu">
+        
+    <li class="nav-logo-wrapper">
+        <img class="nav-logo" src="{{ site.baseurl }}/images/logo.png" alt="{{ site.title }}" />
+    </li>
+      
+    {% for link in site.data.navigation.links %}
+        
+        {% assign class = "" %}
+    
+        {% if link.link == page.url %}
+                {% assign class = class | append: " active" %}
+        {% endif %}
+                
+        <li class="{{ class }}">
+            <a href="{{ site.baseurl }}{{ link.link }}">{{ link.name }}</a>
+        </li>
+          
+    {% endfor %}
+            
+</ul>

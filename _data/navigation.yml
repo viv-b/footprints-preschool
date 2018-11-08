@@ -1,0 +1,22 @@
+links:
+  - name: Home
+    link: /
+    pages_collection:
+  - name: About
+    link: /about/
+    pages_collection:
+  - name: Services
+    link: /services/
+    pages_collection: services
+  - name: Equipment Sales
+    link: /products/
+    pages_collection: products
+  - name: Projects
+    link: /projects/
+    pages_collection: projects
+  - name: News
+    link: /blog/
+    pages_collection: blog
+  - name: Contact
+    link: /contact/
+    pages_collection:

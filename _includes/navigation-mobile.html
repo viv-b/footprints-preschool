@@ -1,0 +1,30 @@
+<button id="close-mobile-menu" class="close-button" aria-label="Close menu" type="button" data-close>
+    <span aria-hidden="true">&times;</span>
+</button>
+
+<ul class="vertical menu">
+        
+    <li class="mobile-icon">
+        <img src="{{ site.baseurl }}/images/logo.png" alt="{{ site.title }}" />
+    </li>
+      
+    {% for link in site.data.navigation.links %}
+        
+        {% assign class = "" %}
+    
+        {% if link.link == page.url %}
+            {% assign class = class | append: " active" %}
+        {% endif %}
+                
+        <li class="{{ class }}">
+            <a href="{{ site.baseurl }}{{ link.link }}">{{ link.name }}</a>
+        </li>
+          
+    {% endfor %}
+            
+    <li class="social">
+        {% if site.data.contact.facebook_url %}<a href="{{ site.data.contact.facebook_url }}" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a>{% endif %}
+        {% if site.data.contact.instagram_url %}<a href="{{ site.data.contact.instagram_url }}" target="_blank" title="Instagram"><i class="fa fa-instagram"></i></a>{% endif %}
+    </li>
+            
+</ul>

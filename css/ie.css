@@ -1,0 +1,193 @@
+/* -------------------------------------------------- 
+IE hacks
+-------------------------------------------------- */
+
+/* Set up for less than IE10 */
+
+/* NOTE: No javascript is loaded for IE9 and below */
+
+/* Browser upgrade rant shown for IE9 and below */
+
+/* The XY grid is supported in Chrome, Firefox, Safari 6+, IE10+, iOS 7+, and Android 4.4+. */
+
+/* IE9 does support media queries */
+
+/* The main issue with Foundation 5 is the use of REM units instead of EM.  These are not picked
+up by IE 6,7,8. */
+
+.ie-only {
+    display: none;
+}
+.lt-ie10 .ie-only {
+	display: block;
+}
+.lt-ie10 .ie-hide {
+	display: none !important;
+}
+
+/* -------------------------------------------------- 
+Overall Widths
+-------------------------------------------------- */
+
+.lt-ie10 .grid-x {
+    max-width: 700px;
+}
+.lt-ie10 img {
+    max-width: 700px;
+}
+
+/* -------------------------------------------------- 
+Header
+-------------------------------------------------- */
+
+.lt-ie10 .header-background {
+    position: static;
+}
+.lt-ie10 .navigation-wrapper {
+    background: rgb(37,55,70);
+}
+    
+/* --------------------------------------------------
+Slider
+-------------------------------------------------- */
+
+.lt-ie10 .slides ul li {
+    opacity: 1;
+}
+.lt-ie10 #tagline-title {
+    opacity: 1;
+}
+.lt-ie10 #tagline {
+    opacity: 1;
+}
+
+
+/* -------------------------------------------------- 
+Navigation
+-------------------------------------------------- */
+
+.lt-ie10 #my-off-canvas {
+    display: none !important;
+}
+.lt-ie10 #mobile-menu-toggle {
+    display: none;
+}
+.lt-ie10 .navigation-wrapper {
+    display: block;
+}
+.lt-ie10 .navigation-wrapper ul.menu {
+    width: 100%;
+    padding: 6px 0;
+}
+.lt-ie10 .navigation-wrapper ul.menu li {
+    display: inline-block;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+.lt-ie10 .navigation-wrapper ul.menu li a {
+    font-size: 1.2em;
+    padding: .7em 1em;
+    color: #fff;
+    text-transform: uppercase;
+}
+.lt-ie10 .navigation-wrapper li.active > a {
+}
+
+/* -------------------------------------------------- 
+Upgrade Browser Rant
+-------------------------------------------------- */
+
+.lt-ie10 .my-ie-rant {
+  text-align: center;
+  background: #cc4b37;
+}
+.lt-ie10 .my-ie-rant p{
+  margin: 0;
+  padding : 0.5em 0;
+  color: #fff;
+}
+.lt-ie10 .my-ie-rant a{
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* -------------------------------------------------- 
+Homepage Specific
+-------------------------------------------------- */
+
+/* -------------------------------------------------- 
+Callouts
+-------------------------------------------------- */
+
+.lt-ie10 .callout {
+  padding: 10px;
+}
+
+/* -------------------------------------------------- 
+Paragraph
+-------------------------------------------------- */
+
+.lt-ie10 p {
+  margin-bottom: 1em;
+}
+
+/* -------------------------------------------------- 
+Images
+-------------------------------------------------- */
+
+.lt-ie10 p img {
+  margin-bottom: 1em;
+}
+
+/* -------------------------------------------------- 
+Overflow (particulary images)
+-------------------------------------------------- */
+
+.lt-ie10 div {
+	overflow: hidden;
+}
+
+/* -------------------------------------------------- 
+Button styles
+-------------------------------------------------- */
+
+.lt-ie10 button,
+.lt-ie10 a.button,
+.lt-ie10 p a.button {
+}
+
+/* -------------------------------------------------- 
+Forms
+-------------------------------------------------- */
+
+.lt-ie10 input {
+  margin: 0 0 0.4em 0;
+  padding: 0.5em;
+  height: auto;
+  color: #333;
+}
+.lt-ie10 textarea {
+  margin: 0 0 0.4em 0;
+}
+
+
+/* IE9 does support media queries, so override a couple of things for IE9 here */
+
+/* 640 pixels - MEDIUM */
+@media screen and (min-width: 40em) { 
+   
+    /* Overall Widths */
+    .lt-ie10 .grid-x {
+        max-width: none;
+    }
+    .lt-ie10 img {
+        max-width: none;
+    }
+    
+    .lt-ie10 .navigation-wrapper ul.menu li a {
+        font-size: 1.2rem;
+        color: #fff;
+        text-transform: uppercase;
+    }
+   
+}

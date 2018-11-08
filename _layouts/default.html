@@ -1,0 +1,147 @@
+<!doctype html>
+<!--[if lt IE 10]>
+<html class="no-js lt-ie10" lang="en">
+<![endif]-->
+<!--[if gt IE 9]><!-->
+<html class="no-js" lang="en" dir="ltr">
+<!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="x-ua-compatible" content="ie=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="generator" content="Jekyll v{{ jekyll.version }}" />
+	
+	{% include seo.html %}
+	
+	<link type="application/atom+xml" rel="alternate" href="{{ site.url }}/feed.xml" title="{{ site.title }}" />
+	
+	<!-- below is from: http://realfavicongenerator.net/ -->
+	<link rel="apple-touch-icon" sizes="180x180" href="{{ site.baseurl }}/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ site.baseurl }}/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ site.baseurl }}/favicon-16x16.png" />
+    <link rel="manifest" href="{{ site.baseurl }}/site.webmanifest">
+    <link rel="mask-icon" href="{{ site.baseurl }}/safari-pinned-tab.svg" color="#5bbad5" /> 
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!-- end favicon -->
+
+	<link rel="stylesheet" href="{{ site.baseurl }}/css/foundation.css" />
+	<link rel="stylesheet" href="{{ site.baseurl }}/css/font-awesome.css" />
+	<link rel="stylesheet" href="{{ site.baseurl }}/css/app.css" />
+	<link rel="stylesheet" href="{{ site.baseurl }}/css/typography.css" />
+	<link rel="stylesheet" href="{{ site.baseurl }}/css/navigation.css" />
+	<link rel="stylesheet" href="{{ site.baseurl }}/css/buttons.css" />
+	<link rel="stylesheet" href="{{ site.baseurl }}/css/hero.css" />
+	<link rel="stylesheet" href="{{ site.baseurl }}/css/footer.css" />
+	<link rel="stylesheet" href="{{ site.baseurl }}/css/form.css" />
+	<link rel="stylesheet" href="{{ site.baseurl }}/css/print.css" />
+	<link rel="stylesheet" href="{{ site.baseurl }}/css/blog.css" />
+	<link rel="stylesheet" href="{{ site.baseurl }}/css/ie.css" />
+	<link rel="stylesheet" href="{{ site.baseurl }}/css/image-lightbox.css" />
+	<link rel="stylesheet" href="{{ site.baseurl }}/css/map.css" />
+	{% if page.url == "/" %}
+	<link rel="stylesheet" href="{{ site.baseurl }}/mightyslider/css/mightyslider.css" />
+	<link rel="stylesheet" href="{{ site.baseurl }}/css/slider.css" />
+	{% endif %}
+	
+	{% if page.url == "/contact/" %}
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
+	{% endif %}
+
+    <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Dosis:400,500,600" rel="stylesheet" />
+	
+	<!--[if lt IE 9]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+
+	<!--[if gt IE 9]><!--> 
+	<!-- Core jQuery Script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
+    <!--<![endif]-->
+    
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+
+	{% if jekyll.environment == 'production' %}
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-119384381-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'UA-119384381-1');
+    </script>
+    {% endif %}
+
+</head>
+	<body class="{% if page.url == '/' %}home{% elsif page.url contains 'contact' %}contact{% elsif page.url contains 'blog' %}blog{% endif %}">
+	    
+	    <div class="off-canvas position-left" id="my-off-canvas" data-off-canvas>
+            {% include navigation-mobile.html %}
+        </div>
+        
+        <div class="off-canvas-content" data-off-canvas-content>
+            
+            {% include mobile-toggle.html %}
+
+    	    <section class="navigation-wrapper hide-for-print">
+    		    {% include navigation.html %}
+    		</section>
+    		
+    		<!--[if lt IE 10]>
+            <div class="my-ie-rant hide-for-print">
+                <p>You really should use a less outdated browser.<br/ >
+                A lot of the functionality will be missing (and it wont look much like it's supposed to). Try <a href="http://www.mozilla.org/en-US/firefox/new/" target="_blank">Firefox</a> or <a href="https://www.google.com/intl/en/chrome/browser/" target="_blank">Chrome</a>.</p>
+            </div>
+            <![endif]-->
+    		 
+    		<div class="print-logo wrapper-padding">
+                <div class="grid-container">
+                    <div class="grid-x grid-margin-x">
+                        <div class="cell">
+                            <img src="{{ site.baseurl }}/images/print-logo.jpg" alt="{{ site.title}}" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+    		<section class="main-wrapper">
+    		    
+    		    {% if page.url == "/" %}
+    		        {% include slider.html %}
+        		{% else %}
+    		        {% include hero.html %}
+    		    {% endif %}
+    		
+    		    {{ content }}
+    		    
+    		</section>
+    
+    		<section class="footer hide-for-print">
+    			{% include footer.html %}
+    		</section>
+		
+		</div>
+		
+		<!--[if gt IE 9]><!--> 
+		<script src="{{ site.baseurl }}/js/vendor/what-input.js"></script>
+		<script src="{{ site.baseurl }}/js/vendor/foundation.js"></script>
+		<script src="{{ site.baseurl }}/js/app.js"></script>
+		<script src="{{ site.baseurl }}/js/misc.js"></script>
+		
+		<script src="{{ site.baseurl }}/js/lightbox/imagelightbox.js"></script>
+	    <script src="{{ site.baseurl }}/js/lightbox/imagelightbox-init.js"></script>
+	    
+	    {% if page.url == "/" %}
+	    <script src="{{ site.baseurl }}/mightyslider/js/mightyslider.min.js"></script>
+	    <script src="{{ site.baseurl }}/mightyslider/js/tweenlite.js"></script>
+	    {% endif %}
+	    
+		<!--<![endif]-->
+	
+		<!-- Go to www.addthis.com/dashboard to customize your tools -->
+		<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5b00b3ee6d850413"></script>
+		
+	</body>
+</html>

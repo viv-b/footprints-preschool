@@ -1,0 +1,29 @@
+.blog .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.blog .sidebar a {
+   display: block;
+   padding: 0.5rem 0;
+   text-decoration: none;
+}
+.blog .sidebar li {
+    border-bottom: solid 1px #ccc;
+}
+.blog .sidebar li.last {
+    border-bottom: none;
+}
+.post-details {
+    border-bottom: solid 2px #ccc;
+}
+.direction-nav {
+    padding-top: 2rem;
+}
+.direction-nav a {
+    text-decoration: uppercase;
+    border-top: solid 2px #546a3b;
+    border-bottom: solid 2px #546a3b;
+    padding: 5px 8px;
+    text-decoration: none !important;
+}

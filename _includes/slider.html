@@ -1,0 +1,68 @@
+<!-- PARENT -->
+<div id="my-slider" class="mightyslider_modern_skin hide-for-print">
+    <!-- FRAME -->
+    <div class="frame">
+        <!-- SLIDEELEMENT -->
+        <div class="slide_element">
+            <!-- SLIDES -->
+            {% for slide in site.data.slider.images %}
+            <div class="slide" data-mightyslider="cover: '{{ slide.image }}'">
+                <h2 class="mSCaption my-title" data-msanimation="{delay: 300, speed: 700, style: {top: 120, opacity: 1} }">
+                    {{ slide.title }}
+                </h2>
+                <p class="mSCaption my-blurb lead" data-msanimation="{delay: 500, speed: 700, style: {top: 185, opacity: 1} }">
+                    {{ slide.sub_title }}
+                </p>
+                <div class="mSCaption my-mask" data-msanimation="{delay: 500, speed: 900, style: {opacity: 0.5} }">
+                </div>
+                <div class="credit">
+                    <!-- &copy; Alton Drilling -->
+                </div>
+            </div>
+            {% endfor %}
+            <!-- END OF SLIDES -->
+        </div>
+        <!-- END OF SLIDEELEMENT -->
+    </div>
+    <!-- END OF FRAME -->
+</div>
+<!-- END OF PARENT -->
+
+<script type="text/javascript">
+    jQuery(document).ready(function($) {
+        (function(){
+            // Global slider's DOM elements
+            var $example = $('#my-slider'),
+                $frame = $('.frame', $example);
+
+            // Calling mightySlider via jQuery proxy
+            $frame.mightySlider({
+                speed: 1000,
+                easing: 'easeOutExpo',
+                viewport: 'fill',
+                
+                // Navigation options
+                navigation: {
+                    slideSize: '100%',
+                    keyboardNavBy: 'slides'
+                },
+
+                // Dragging options
+                dragging: {
+                    swingSpeed:    0.1
+                },
+
+                // Pages options
+                pages: {
+                    activateOn: 'click'
+                },
+
+                // Commands options
+                commands: {
+                    pages: 1,
+                    buttons: 1
+                }
+            });
+        })();
+    });
+</script>

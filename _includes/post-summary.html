@@ -1,0 +1,18 @@
+<div class="cell" style="display: flex;">
+ 
+    <div class="card">
+        <p class="editor-link"><a href="cloudcannon:collections/{{ post.path }}"><strong>&#9998;</strong> Edit Post</a></p>
+        <a href="{{ site.baseurl }}{{ post.url }}">
+            {% if post.summary_image != null %}
+                <img src="//images.weserv.nl/?url={{ site.url | remove: 'https://' | remove: 'http://' }}{{ post.summary_image }}&w=800&h=400&t=square" alt="{{ post.title }}" />
+            {% endif %}
+        </a>
+        <div class="card-section">
+            <h4><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</h4>
+            {% include post-details.html post=post %}
+	        <p>{{ post.content | strip_html | truncatewords: 40,"..." }}</p>
+	        <p><a class="button" href="{{ site.baseurl }}{{ post.url }}">More&hellip;</a></p>
+        </div>
+    </div>
+        
+</div>

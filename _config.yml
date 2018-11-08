@@ -1,0 +1,110 @@
+title: Alton Drilling
+url: 'https://www.altondrilling.co.nz'
+baseurl:
+
+url_dev: 'https://chief-taro.cloudvent.net'
+
+kramdown:
+  auto_ids: false
+  
+
+# Note: Need to change the API_KEY - THIS IS FOR ALTON DRILLING
+google_maps_javascript_api_key: AIzaSyDHJOM0HUXycikhMCYbgLMLGyUCiBqt1TI
+google_maps_latitude: -37.391655
+google_maps_longitude: 175.838012
+google_maps_zoom: 14
+
+social:
+  default_image: /images/fb-hero.jpg
+
+_comments:
+
+collections:
+  services:
+    output: true
+  projects:
+    output: true
+  products:
+    output: true
+  product_types:
+    output: true
+    _hide_content: true
+    permalink: /products/type/:name/
+
+_options:
+  slider_image:
+    width: 1600
+    resize_style: contain
+    expandable: true
+    uploads_dir: "uploads/slider"
+  hero_image:
+    width: 1600
+    height: 400
+    resize_style: contain
+    expandable: true
+    uploads_dir: "uploads/hero-images"
+  content:
+    width: 800
+    height: 1200
+    resize_style: contain
+    uploads_dir: "uploads/content-images"
+  _block:
+    format: p h1 h2 h3 h4 h5 h6 pre address div
+    bold: true
+    italic: true
+    link: true
+    image: true
+    numberedlist: true
+    bulletedlist: true
+    table: true
+    right: align-to-right
+
+paginate: 24
+paginate_path: '/blog/:num/'
+permalink: '/:year/:month/:day/:title/'
+
+jekyll-archives:
+  enabled:
+    - "categories"
+
+plugins:
+  - "jekyll-paginate"
+  - "jekyll-archives"
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "products"
+    values:
+      layout: "product"
+  - scope:
+      path: ""
+      type: "product_types"
+    values:
+      layout: "product-type"
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
+  - scope:
+      path: ""
+      type: "services"
+    values:
+      layout: "service"
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+  - scope:
+      path: "index.html"
+      type: "pages"
+    values:
+      layout: "default"
+      

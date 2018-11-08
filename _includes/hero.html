@@ -1,0 +1,66 @@
+<!-- if there is a HERO IMAGE for this page then use that -->
+{% if page.hero_image %}
+  
+    <div class="hero a1 hide-for-print" style="background-image: url('{{ site.url }}{{ site.baseurl }}{{ page.hero_image }}')"></div>
+  
+{% else %}
+    
+    <!-- Check if this is a Product 'Type' page - e.g. 'Rigs' -->
+    <!-- Product Types are a special URL in that they are like this "/products/type/rigs" -->
+    {% if page.url contains "/products/type/" %}
+     
+        {% assign section_top_pages = site.pages | where:"_section_id", page._section_id %}
+        
+        <!-- In case there is more than one value returned (and the assignment above returns an array). -->
+        {% assign section_top_page = section_top_pages | first %}
+        
+        {% if section_top_page.hero_image %}
+
+            <div class="hero a2 hide-for-print" style="background-image: url('{{ site.url }}{{ site.baseurl }}{{ section_top_page.hero_image }}')"></div>
+        
+        {% endif %}
+     
+    {% elsif page.url != "/products/" and page.url contains "/products/" %}
+    
+        {% assign product_type_url = "/products/type/" | append: page.product_type | append: "/" %}
+    
+        {% assign product_type_pages = site.product_types | where:"url", product_type_url %}
+        
+        <!-- Assignment above returns an array so need to get individual item (even though should be only one page returned).-->
+        {% assign product_type_page = product_type_pages | first %}
+        
+        {% if product_type_page.hero_image %}
+
+            <div class="hero a3 hide-for-print" style="background-image: url('{{ site.url }}{{ site.baseurl }}{{ product_type_page.hero_image }}')"></div>
+            
+        {% else %}
+        
+             {% assign section_top_pages = site.pages | where:"_section_id", page._section_id %}
+        
+            <!-- In case there is more than one value returned (and the assignment above returns an array). -->
+            {% assign section_top_page = section_top_pages | first %}
+        
+            {% if section_top_page.hero_image %}
+
+                <div class="hero a4 hide-for-print" style="background-image: url('{{ site.url }}{{ site.baseurl }}{{ section_top_page.hero_image }}')"></div>
+        
+            {% endif %}
+        
+        {% endif %}
+    
+    {% else %}
+
+        {% assign section_top_pages = site.pages | where:"_section_id", page._section_id %}
+        
+        <!-- In case there is more than one value returned (and the assignment above returns an array). -->
+        {% assign section_top_page = section_top_pages | first %}
+        
+        {% if section_top_page.hero_image %}
+
+        <div class="hero a5 hide-for-print" style="background-image: url('{{ site.url }}{{ site.baseurl }}{{ section_top_page.hero_image }}')"></div>
+        
+        {% endif %}
+            
+    {% endif %}
+  
+{% endif %}

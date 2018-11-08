@@ -1,0 +1,5 @@
+<div class="grid-x grid-margin-x grid-margin-y">
+  {% for post in include.posts %}
+    {% include post-summary.html post=post %}
+  {% endfor %}
+</div>

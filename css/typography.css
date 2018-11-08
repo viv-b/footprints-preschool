@@ -1,0 +1,148 @@
+body,
+p {
+    color: #333;
+    font-family: 'Raleway', sans-serif;
+}
+.lead {
+    font-size: 110%;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-family: 'Dosis', sans-serif;
+    color: #666;
+}
+h1 {
+    line-height: 1.2;
+    font-weight: 700;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+}
+h2 {
+    line-height: 1.2;
+    font-weight: 700;
+    font-weight: 500;
+}
+h3 {
+    color: #666;
+    font-weight: 700;
+    font-weight: 500;
+}
+
+
+/* 640 pixels */
+@media screen and (min-width: 40em) {
+   
+    
+}
+
+/* 1024 pixels */
+@media screen and (min-width: 64em) {
+    
+}
+
+/* 1200 pixels */
+@media screen and (min-width: 75em) {
+
+}
+
+/* 1920 pixels */
+@media screen and (min-width: 120em) {
+
+}
+
+
+/* Foundation 6.4.3 styles : */
+/*
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  color: inherit;
+  text-rendering: optimizeLegibility; }
+  h1 small, .h1 small,
+  h2 small, .h2 small,
+  h3 small, .h3 small,
+  h4 small, .h4 small,
+  h5 small, .h5 small,
+  h6 small, .h6 small {
+    line-height: 0;
+    color: #cacaca; }
+
+h1, .h1 {
+  font-size: 1.5rem;
+  line-height: 1.4;
+  margin-top: 0;
+  margin-bottom: 0.5rem; }
+
+h2, .h2 {
+  font-size: 1.25rem;
+  line-height: 1.4;
+  margin-top: 0;
+  margin-bottom: 0.5rem; }
+
+h3, .h3 {
+  font-size: 1.1875rem;
+  line-height: 1.4;
+  margin-top: 0;
+  margin-bottom: 0.5rem; }
+
+h4, .h4 {
+  font-size: 1.125rem;
+  line-height: 1.4;
+  margin-top: 0;
+  margin-bottom: 0.5rem; }
+
+h5, .h5 {
+  font-size: 1.0625rem;
+  line-height: 1.4;
+  margin-top: 0;
+  margin-bottom: 0.5rem; }
+
+h6, .h6 {
+  font-size: 1rem;
+  line-height: 1.4;
+  margin-top: 0;
+  margin-bottom: 0.5rem; }
+
+@media print, screen and (min-width: 40em) {
+  h1, .h1 {
+    font-size: 3rem; }
+  h2, .h2 {
+    font-size: 2.5rem; }
+  h3, .h3 {
+    font-size: 1.9375rem; }
+  h4, .h4 {
+    font-size: 1.5625rem; }
+  h5, .h5 {
+    font-size: 1.25rem; }
+  h6, .h6 {
+    font-size: 1rem; } }
+}
+*/
+
+/* MY RESET OF THESE VALUES FOR SMALL SCREEN */
+
+h1, .h1 {
+  font-size: 2.7rem;
+}
+h2, .h2 {
+  font-size: 2.25rem;
+}
+h3, .h3 {
+  font-size: 1.9375rem;
+}
+h4, .h4 {
+  font-size: 1.5625rem;
+}
+h5, .h5 {
+  font-size: 1.25rem;
+}
+h6, .h6 {
+  font-size: 1rem;
+}
