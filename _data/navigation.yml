@@ -5,9 +5,9 @@ links:
   - name: About
     link: /about/
     pages_collection:
-  - name: Services
-    link: /services/
-    pages_collection: services
+  - name: Our Staff
+    link: /our-staff/
+    pages_collection:
   - name: Equipment Sales
     link: /products/
     pages_collection: products
