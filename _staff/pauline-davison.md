@@ -1,6 +1,7 @@
 ---
 name: Pauline Davison
 position: 'Reliever, Administration, Director'
+image:
 sort_number: 2
 ---
 
