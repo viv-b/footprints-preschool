@@ -1,6 +1,6 @@
 ---
 name:
 position:
-sort_number:
 image:
+sort_number:
 ---
