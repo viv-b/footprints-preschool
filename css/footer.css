@@ -1,8 +1,8 @@
 .footer {
-    background: #222;
+    background: #efefef;
 }
 .footer * {
-    color: #fff;
+    color: #111;
 }
 .footer p {
     margin-bottom: 0;
