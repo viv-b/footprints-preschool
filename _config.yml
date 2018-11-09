@@ -1,8 +1,8 @@
 title: Alton Drilling
-url: 'https://www.altondrilling.co.nz'
+url: 'https://haloed-bear.cloudvent.net'
 baseurl:
 
-url_dev: 'https://chief-taro.cloudvent.net'
+url_dev:
 
 kramdown:
   auto_ids: false
@@ -20,16 +20,10 @@ social:
 _comments:
 
 collections:
-  services:
-    output: true
-  projects:
-    output: true
-  products:
-    output: true
-  product_types:
+  staff:
     output: true
     _hide_content: true
-    permalink: /products/type/:name/
+   
 
 _options:
   slider_image:
@@ -77,26 +71,6 @@ defaults:
       type: "posts"
     values:
       layout: "post"
-  - scope:
-      path: ""
-      type: "products"
-    values:
-      layout: "product"
-  - scope:
-      path: ""
-      type: "product_types"
-    values:
-      layout: "product-type"
-  - scope:
-      path: ""
-      type: "projects"
-    values:
-      layout: "project"
-  - scope:
-      path: ""
-      type: "services"
-    values:
-      layout: "service"
   - scope:
       path: ""
       type: "pages"
