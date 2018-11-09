@@ -5,9 +5,6 @@ links:
   - name: About
     link: /about/
     pages_collection:
-  - name: Our Staff
-    link: /our-staff/
-    pages_collection:
   - name: Whanau
     link: /whanau/
     pages_collection:
