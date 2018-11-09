@@ -98,19 +98,12 @@ section.footer {
     margin-bottom: -110px;
 }
 
-.heading {
-    padding: 30px 0;
-    margin-bottom: 60px;
-}
-.heading h1 {
+h1.main-heading {
     color: #111;
     padding-bottom: 1rem;
     border-bottom: solid 2px #111;
+     margin-bottom: 60px;
 }
-.home .heading {
-    margin-bottom: 0;
-}
-
 
 /* -------- */
 /* LINKS    */
