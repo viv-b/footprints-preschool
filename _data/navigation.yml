@@ -8,12 +8,9 @@ links:
   - name: Our Staff
     link: /our-staff/
     pages_collection:
-  - name: Equipment Sales
-    link: /products/
-    pages_collection: products
-  - name: Projects
-    link: /projects/
-    pages_collection: projects
+  - name: Whanau
+    link: /whanau/
+    pages_collection:
   - name: News
     link: /blog/
     pages_collection: blog
