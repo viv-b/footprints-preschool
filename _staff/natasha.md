@@ -1,7 +1,7 @@
 ---
 name: Natasha
 position:
-image:
+image: /uploads/staff/tash.jpg
 sort_number: 6
 ---
 
