@@ -23,7 +23,9 @@ description:
             </div>
             
             <div class="cell">
+                {% unless forloop.last %}
                 <hr />
+                {% endunless %}
             </div>
             
             {% endfor %}
