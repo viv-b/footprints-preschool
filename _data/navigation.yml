@@ -11,6 +11,9 @@ links:
   - name: Whanau
     link: /whanau/
     pages_collection:
+  - name: Fees
+    link: /fees/
+    pages_collection:
   - name: News
     link: /blog/
     pages_collection: blog
