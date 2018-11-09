@@ -21,9 +21,7 @@ _comments:
 
 collections:
   staff:
-    output: true
-    _hide_content: true
-   
+    output: false
 
 _options:
   slider_image:
