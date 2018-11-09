@@ -52,14 +52,14 @@
     border-bottom: solid 2px #111;
 }
 .off-canvas .menu li.active > a {
-    color: #fff;
+    color: #111;
     background: transparent;
 }
 .off-canvas .menu li:hover > a {
-    color: #fff;
+    color: #111;
 }
 .off-canvas .menu li.active:hover > a {
-    color: #fff;
+    color: #111;
 }
 .off-canvas .close-button {
     z-index: 1000;
@@ -134,7 +134,7 @@
         border-bottom: solid 2px #111;
     }
     .navigation-wrapper li.active > a {
-        color: #fff;
+        color: #111;
         background: transparent;
     }
     .navigation-wrapper li:hover > a {
