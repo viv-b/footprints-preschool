@@ -1,6 +1,7 @@
 ---
 name: Susan Lemmens
 position:
+image:
 sort_number: 3
 ---
 
