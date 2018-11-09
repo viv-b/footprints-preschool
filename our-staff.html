@@ -12,6 +12,9 @@ description:
             {% for person in sorted_staff %}
             
             <div class="medium-4 large-4 cell">
+                {% if person.image %}
+                    <p><img src="{{ site.baseurl }}{{ person.image }}" alt="{{ person.name }}" /></p>
+                {% endif %}
             </div>
             
              <div class="medium-8 large-offset-1 large-7 cell">
