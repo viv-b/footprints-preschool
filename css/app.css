@@ -102,8 +102,12 @@ h1.main-heading {
     color: #111;
     padding-bottom: 1rem;
     border-bottom: solid 2px #111;
-     margin-bottom: 60px;
+    margin-bottom: 60px;
 }
+.home h1.main-heading {
+    margin-bottom: 0;
+}
+
 
 /* -------- */
 /* LINKS    */
