@@ -1,7 +1,7 @@
 ---
 name: Leona Moore
 position:
-image:
+image: /uploads/staff/leona-moore.jpg
 sort_number: 4
 ---
 
