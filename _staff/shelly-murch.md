@@ -1,7 +1,7 @@
 ---
 name: Shelly Murch
 position:
-image:
+image: /uploads/staff/shelly-murch.jpg
 sort_number: 5
 ---
 
