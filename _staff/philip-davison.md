@@ -1,7 +1,7 @@
 ---
 name: Philip Davison
 position: Owner/Manager
-image:
+image: /uploads/staff/philip-davison.jpg
 sort_number: 1
 ---
 
