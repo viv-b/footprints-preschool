@@ -1,7 +1,7 @@
 ---
 name: Sarah Spicer
 position:
-sort_number:
+sort_number: 6
 ---
 
 I have worked as a reliever at Footprints for over two years and have recently taken on a permanent position working three days per week.
