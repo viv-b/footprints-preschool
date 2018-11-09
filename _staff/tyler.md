@@ -1,6 +1,7 @@
 ---
 name: Tyler
 position:
+image:
 sort_number: 8
 ---
 
