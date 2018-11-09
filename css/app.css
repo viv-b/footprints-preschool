@@ -104,6 +104,7 @@ section.footer {
 }
 .heading h1 {
     color: #111;
+    padding-bottom: 1rem;
     border-bottom: solid 2px #111;
 }
 .home .heading {
