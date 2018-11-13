@@ -18,6 +18,9 @@ h1 {
     margin: 0;
     padding: 0;
 }
+h1.main-heading {
+    margin-top: 50px;
+}
 h2 {
     line-height: 1.2;
     font-weight: 700;
