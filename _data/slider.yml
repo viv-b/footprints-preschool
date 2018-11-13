@@ -1,10 +1,10 @@
 images:
-  - image: /uploads/sample-2.jpg
+  - slider_image:
     title: Lorem ipsum
     sub_title: Footprints Preschool
-  - image: /uploads/sample-3.jpg
+  - slider_image:
     title: Lorem ipsum
     sub_title: Footprints Preschool
-  - image: /uploads/sample-4.jpg
+  - slider_image:
     title: Lorem ipsum
     sub_title: Footprints Preschool
