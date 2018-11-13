@@ -66,17 +66,17 @@
 section.blurb {
     padding-top: 80px;
     padding-bottom: 60px;
-    background: #fff url('../images/bgd-home-top.jpg') no-repeat;
+    /* background: #fff url('../images/bgd-home-top.jpg') no-repeat;
     background-size: auto 100%;
-    background-position: right center;
+    background-position: right center; */
 }
 section.shortcuts {
     padding-top: 70px;
     padding-bottom: 70px;
-    background: #fff url('../images/home-bgd.jpg') no-repeat;
+    /* background: #fff url('../images/home-bgd.jpg') no-repeat;
     background: #fff url('../images/home-bgd-25.jpg') no-repeat;
     background: #fff url('../images/home-bgd-35.jpg') no-repeat;
-    background-size: cover;
+    background-size: cover; */
 }
 section.shortcuts p {
     color: #111;
