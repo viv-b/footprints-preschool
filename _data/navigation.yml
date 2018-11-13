@@ -8,6 +8,9 @@ links:
   - name: Whanau Info
     link: /whanau/
     pages_collection:
+  - name: Nature
+    link: /nature/
+    pages_collection:
   - name: Fees
     link: /fees/
     pages_collection:
