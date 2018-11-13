@@ -5,11 +5,14 @@ links:
   - name: About
     link: /about/
     pages_collection:
-  - name: Whanau Info
-    link: /whanau/
+  - name: The Journey
+    link: /the-journey/
     pages_collection:
   - name: Nature
     link: /nature/
+    pages_collection:
+  - name: Whanau Info
+    link: /whanau/
     pages_collection:
   - name: Fees
     link: /fees/
