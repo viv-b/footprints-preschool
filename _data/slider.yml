@@ -1,16 +1,10 @@
 images:
-  - image: /uploads/slider/slider-1.jpg
-    title: Rig Design & Refurbishing
-    sub_title: Alton Drilling Ltd.
-  - image: /uploads/slider/slider-2.jpg
-    title: Rig Manufacturing
-    sub_title: Alton Drilling Ltd.
-  - image: /uploads/slider/slider-3.jpg
-    title: Underground Drilling Services
-    sub_title: Alton Drilling Ltd.
-  - image: /uploads/slider/slider-4.jpg
-    title: All Environments
-    sub_title: Alton Drilling Ltd.
-  - image: /uploads/slider/slider-5.jpg
-    title: Diverse Projects
-    sub_title: Alton Drilling Ltd.
+  - image: /uploads/sample-2.jpg
+    title: Lorem ipsum
+    sub_title: Footprints Preschool
+  - image: /uploads/sample-3.jpg
+    title: Lorem ipsum
+    sub_title: Footprints Preschool
+  - image: /uploads/sample-4.jpg
+    title: Lorem ipsum
+    sub_title: Footprints Preschool
