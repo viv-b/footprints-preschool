@@ -1,10 +1,21 @@
-images:
-  - slider_image: /uploads/slider/slider-1.jpg
-    title: Lorem ipsum
-    sub_title: Footprints Preschool
-  - slider_image: /uploads/slider/slider-2.jpg
-    title: Lorem ipsum
-    sub_title: Footprints Preschool
-  - slider_image: /uploads/slider/slider-3.jpg
-    title: Lorem ipsum
-    sub_title: Footprints Preschool
+slides:
+  - image: /uploads/slider/slider-kids-train.jpg
+    title: Slide ONE
+    sub_title: Goldfields Railway
+    blurb: 'Ut enim ad minim veniam, quis nostrud exercitation.'
+  - image: /uploads/slider/slider-kids-train-2.jpg
+    title: Slide TWO
+    sub_title: Goldfields Railway
+    blurb: 'Ut enim ad minim veniam, quis nostrud exercitation.'
+  - image: /uploads/slider/slider-kids-train-3.jpg
+    title: Slide THREE
+    sub_title: Goldfields Railway
+    blurb: 'Ut enim ad minim veniam, quis nostrud exercitation.'
+  - image: /uploads/slider/slider-train-mist.jpg
+    title: Slide FOUR
+    sub_title: Goldfields Railway
+    blurb: 'Ut enim ad minim veniam, quis nostrud exercitation.'
+  - image: /uploads/slider/slider-train-tracks.jpg
+    title: Slide FIVE
+    sub_title: Goldfields Railway
+    blurb: 'Ut enim ad minim veniam, quis nostrud exercitation.'
