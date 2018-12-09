@@ -292,6 +292,15 @@
   opacity: 1
 }
 
+.slide-radio1:checked ~ .slider-content,
+.slide-radio2:checked ~ .slider-content,
+.slide-radio3:checked ~ .slider-content,
+.slide-radio4:checked ~ .slider-content,
+.slide-radio5:checked ~ .slider-content,
+.slide-radio6:checked ~ .slider-content {
+    background: rgba(0,0,0,0.3);
+}
+
 /* Responsive */
 @media only screen and (max-width: 768px) {
   .css-slider h2 {
