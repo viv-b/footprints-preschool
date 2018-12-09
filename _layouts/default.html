@@ -66,16 +66,7 @@
 	{% if jekyll.environment == 'production' %}
     {% endif %}
     
-    <!-- Below from: https://css-tricks.com/making-animations-wait/ -->
-    <script>
-        document.body.classList.add('js-loading');
-
-        window.addEventListener("load", showPage);
-
-        function showPage() {
-            document.body.classList.remove('js-loading');
-        }
-    </script>
+   
 
 </head>
 	<body class="{% if page.url == '/' %}home{% elsif page.url contains 'contact' %}contact{% elsif page.url contains 'blog' %}blog{% endif %}">
