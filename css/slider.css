@@ -296,12 +296,12 @@
   opacity: 1
 }
 
-.slide-radio1:checked ~ .slider-content,
-.slide-radio2:checked ~ .slider-content,
-.slide-radio3:checked ~ .slider-content,
-.slide-radio4:checked ~ .slider-content,
-.slide-radio5:checked ~ .slider-content,
-.slide-radio6:checked ~ .slider-content {
+.slide-radio1:checked ~ .slide-1 .slider-content,
+.slide-radio2:checked ~ .slide-2 .slider-content,
+.slide-radio3:checked ~ .slide-3 .slider-content,
+.slide-radio4:checked ~ .slide-4 .slider-content,
+.slide-radio5:checked ~ .slide-5 .slider-content,
+.slide-radio6:checked ~ .slide-6 .slider-content {
     opacity: 1;
 }
 
