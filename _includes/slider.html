@@ -4,7 +4,7 @@
     <div class="css-slider-wrapper">
           
           {% for slide in site.data.slider.slides %}
-          <input type="radio" name="slider" class="slide-radio{{ forloop.index }}" id="slider_{{ forloop.index }}" {% if forloop.first %}checked{% endif %} />
+          <input type="radio" name="slider" class="slide-radio{{ forloop.index }}" id="slider_{{ forloop.index }}" /> <!-- Default uses (% if forloop.first %)checked(% endif %) -->
           {% endfor %}
     
           <!-- Slider Pagination -->
