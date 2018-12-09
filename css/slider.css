@@ -224,7 +224,7 @@
   cursor: pointer;
 }
 
-/* Slider Pagger Event */
+/* Slider Pager Event */
 .slide-radio1:checked ~ .slider-pagination .page1,
 .slide-radio2:checked ~ .slider-pagination .page2,
 .slide-radio3:checked ~ .slider-pagination .page3,
