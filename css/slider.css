@@ -1,202 +1,341 @@
+/* Idea taken from: https://designmodo.com/create-full-screen-slider/
+/* IMPORTANT NOTE: One class was 'slider' but since foundation also uses the same class, changed to 'css-slider' */
 
-#my-slider {
-  height: 500px;
+/* Viv added this outer wrapper to allow full-screen but access to content below */
+.css-slider-wrapper-outer {
+  position: relative;
   overflow: hidden;
+  /* Avoid setting width to 100vw or have scrollbar appear bottom of page */ 
+  /* width: 100vw; */
+  height: 100vh;
 }
-#my-slider .mSButtons {
-  height: 80%;
-}
-#my-slider .frame {
-  width: 100%;
-  height: 100%;
-}
-#my-slider .frame .slide_element {
-  height: 100%;
-}
-#my-slider .frame .slide_element > div {
-  float: left;
-  height: 100%;
+
+
+/* Slider wrapper */
+.css-slider-wrapper {
+  display: block;
+  background: #fff;
   overflow: hidden;
-}
-#my-slider .frame .mSCover img {
-  max-width: none;
-}
-#my-slider .credit {
   position: absolute;
-  bottom: 10px;
-  left: 10px;
-  font-size: 11px;
-  line-height: normal;
-  font-weight: 300;
-  text-shadow: rgba(0,0,0,0.7) 0 1px 0px;
-  color: #CCC;
-  background: #000;
-  background: rgba(0,0,0,0.6);
-  padding: 0 4px;
-  white-space: nowrap;
-  z-index: 1002;
-  text-transform: uppercase;
-}
-#my-slider .credit a {
-  color: #FFF;
-  font-weight: 400;
-}
-.infoBlock {
-  position: absolute;
-  top: 30px;
-  right: 30px;
-  left: auto;
-  max-width: 30%;
-  padding-bottom: 0;
-  background: #FFF;
-  background: rgba(255, 255, 255, 0.6);
-  overflow: hidden;
-  padding: 20px;
-  z-index: 1002;
-}
-.infoBlockLeftBlack {
-  color: #FFF;
-  background: #000;
-  background: rgba(0,0,0,0.55);
-  left: 90px;
-  right: auto;
-  opacity: 0;
-}
-.infoBlock2 {
-  top: 90px;
-  left: 100px;
-}
-.infoBlock h4 {
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 1.2;
-  margin: 0;
-  padding-bottom: 3px;
-  color: inherit;
-  text-align: left;
-}
-.infoBlock p {
-  font-size: 16px;
-  font-weight: 300;
-  margin: 4px 0 0;
-}
-.infoBlock a {
-  color: #FFF;
-  text-decoration: underline;
-}
-.my-title {
-  position: absolute;
+  left: 0;
+  right: 0;
   top: 0;
-  left: 0;
-  width: 100%;
-  text-align: center;
-  overflow: hidden;
-  z-index: 1002;
-  opacity: 0;
-  color: #fff;
-  text-shadow: 2px 2px 3px rgba(150, 150, 150, 1);
-  font-size: 3rem;
+  bottom: 0;
 }
-.my-blurb {
+
+/* Slider */
+.css-slider {
+  width: 100%;
+  height: 100%;
   position: absolute;
-  top: 350;
   left: 0;
-  width: 100%;
-  text-align: center;
-  overflow: hidden;
-  z-index: 1003;
+  top: 0;
+  opacity: 1;
+  z-index: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  -webkit-transition: -webkit-transform 1600ms;
+  transition: -webkit-transform 1600ms, transform 1600ms;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  background-size: cover !important;
+}
+
+/* Slides Background Color */
+.slide-1 {
+  left: 0;
+}
+.slide-2 {
+  left: 100%
+}
+.slide-3 {
+  left: 200%
+}
+.slide-4 {
+  left: 300%;
+}
+.slide-5 {
+  left: 400%;
+}
+.slide-6 {
+  left: 500%;
+}
+.css-slider {
+  display: flex;
+  justify-content: flex-start;
+}
+.slider-content {
+  /* width: 635px; */
+  position: absolute;
+  bottom: 30px;
+  padding: 60px 80px 70px 80px;
+  margin-left: 30px;
+  background: rgba(0,0,0,0.3);
+}
+.slider-content * {
+  color: #fff;
+}
+
+
+/* Slider Inner Slide Effect */
+.css-slider h2 {
+  font-weight: 900;
+  text-transform: capitalize;
+  font-size: 60px;
+  font-weight: 300;
+  line-height: 1.2;
   opacity: 0;
-  color: #ccc;
-  text-shadow: 1px 1px 2px rgba(150, 150, 150, 1);
-}
-.my-mask {
-    position: absolute;
-    width: 100%;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background-color: #000;
-    opacity: 0;
-    z-index: 1001;
+  -webkit-transform: translateX(500px);
+  transform: translateX(500px);
+  margin-top: 0;
+  letter-spacing: 2px;
 }
 
-@media (max-width: 979px) {
-  
-  #my-slider {
-    height: 400px;
+.css-slider h4 {
+  font-size: 22px;
+  /* font-family: "Oswald";
+  color: rgba(51, 51, 51, 0.349); */
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+  opacity: 0;
+  -webkit-transform: translateX(500px);
+  transform: translateX(500px);
+}
+
+.css-slider p.blurb {
+  font-size: 18px;
+  /* font-family: "Oswald";
+  color: rgba(51, 51, 51, 0.349); */
+  font-weight: bold;
+  line-height: 1.2;
+  opacity: 0;
+  -webkit-transform: translateX(500px);
+  transform: translateX(500px);
+}
+
+.css-slider > img {
+  position: absolute;
+  right: 10%;
+  bottom: 0;
+  height: 100%;
+  opacity: 0;
+  -webkit-transform: translateX(500px);
+  transform: translateX(500px);
+}
+
+.slide-1 > img {
+  right: 0;
+}
+
+.more-btn {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  padding-left: 30px !important;
+  padding-right: 30px !important;
+  background-color: rgba(0,0,0,0.25) !important;
+  border-radius: 10px;
+  border: solid 2px #fff;
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer;
+  transition: all .2s;
+}
+
+.more-btn:hover {
+  box-shadow: 0px 0px 60px -17px rgba(51,51,51,1);
+}
+
+.css-slider .more-btn:focus,
+.navigation .login-btn:focus {
+  outline: none;
+}
+
+/* Animations */
+.css-slider h2 {
+  -webkit-transition: opacity 800ms, -webkit-transform 800ms;
+  transition: transform 800ms, opacity 800ms;
+  -webkit-transition-delay: 1s; /* Safari */
+  transition-delay: 1s;
+}
+.css-slider h4 {
+  -webkit-transition: opacity 800ms, -webkit-transform 800ms;
+  transition: transform 800ms, opacity 800ms;
+  -webkit-transition-delay: 1.4s; /* Safari */
+  transition-delay: 1.4s;
+}
+.css-slider p.blurb {
+  -webkit-transition: opacity 800ms, -webkit-transform 800ms;
+  transition: transform 800ms, opacity 800ms;
+  -webkit-transition-delay: 1.2s; /* Safari */
+  transition-delay: 1.2s;
+}
+.css-slider > img {
+  -webkit-transition: opacity 800ms, -webkit-transform 800ms;
+  transition: transform 800ms, opacity 800ms;
+  -webkit-transition-delay: 1.2s; /* Safari */
+  transition-delay: 1.2s;
+}
+
+/* Number Pagination */
+.number-pagination {
+  position: absolute;
+  bottom: 50px;
+  right: 100px;
+  font-family: "Oswald";
+  font-weight: bold;
+}
+
+.number-pagination span {
+  font-size: 30px;
+  color: #ea2e49;
+  letter-spacing: 4px;
+}
+
+.number-pagination span:after {
+  content: "/5";
+  font-size: 16px;
+  color: #fff;
+}
+
+/* Slider Pagger */
+.slider-pagination {
+  position: absolute;
+  bottom: 50px;
+  width: 575px;
+  left: 100px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+}
+.slider-pagination label {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+  background: #fff;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+/* Slider Pagger Event */
+.slide-radio1:checked ~ .slider-pagination .page1,
+.slide-radio2:checked ~ .slider-pagination .page2,
+.slide-radio3:checked ~ .slider-pagination .page3,
+.slide-radio4:checked ~ .slider-pagination .page4,
+.slide-radio5:checked ~ .slider-pagination .page5,
+.slide-radio6:checked ~ .slider-pagination .page6 {
+  width: 14px;
+  height: 14px;
+  border: 2px solid #ea2e49;
+  background: transparent;
+}
+
+/* Slider Slide Effect */
+.slide-radio1:checked ~ .css-slider {
+  -webkit-transform: translateX(0%);
+  transform: translateX(0%);
+}
+.slide-radio2:checked ~ .css-slider {
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+}
+.slide-radio3:checked ~ .css-slider {
+  -webkit-transform: translateX(-200%);
+  transform: translateX(-200%);
+}
+.slide-radio4:checked ~ .css-slider {
+  -webkit-transform: translateX(-300%);
+  transform: translateX(-300%);
+}
+.slide-radio5:checked ~ .css-slider {
+  -webkit-transform: translateX(-400%);
+  transform: translateX(-400%);
+}
+.slide-radio6:checked ~ .css-slider {
+  -webkit-transform: translateX(-500%);
+  transform: translateX(-500%);
+}
+
+.slide-radio1:checked ~ .slide-1 h2,
+.slide-radio2:checked ~ .slide-2 h2,
+.slide-radio3:checked ~ .slide-3 h2,
+.slide-radio4:checked ~ .slide-4 h2,
+.slide-radio5:checked ~ .slide-5 h2,
+.slide-radio6:checked ~ .slide-6 h2,
+.slide-radio1:checked ~ .slide-1 h4,
+.slide-radio2:checked ~ .slide-2 h4,
+.slide-radio3:checked ~ .slide-3 h4,
+.slide-radio4:checked ~ .slide-4 h4,
+.slide-radio5:checked ~ .slide-5 h4,
+.slide-radio6:checked ~ .slide-6 h4,
+.slide-radio1:checked ~ .slide-1 p.blurb,
+.slide-radio2:checked ~ .slide-2 p.blurb,
+.slide-radio3:checked ~ .slide-3 p.blurb,
+.slide-radio4:checked ~ .slide-4 p.blurb,
+.slide-radio5:checked ~ .slide-5 p.blurb,
+.slide-radio6:checked ~ .slide-6 p.blurb,
+.slide-radio1:checked ~ .slide-1 > img,
+.slide-radio2:checked ~ .slide-2 > img,
+.slide-radio3:checked ~ .slide-3 > img,
+.slide-radio4:checked ~ .slide-4 > img,
+.slide-radio5:checked ~ .slide-5 > img,
+.slide-radio6:checked ~ .slide-6 > img {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  opacity: 1
+}
+
+/* Responsive */
+@media only screen and (max-width: 768px) {
+  .css-slider h2 {
+    font-size: 20px;
   }
-  .infoBlock {
-    min-width: 40%;
+  .css-slider h4 {
+    font-size: 16px;
   }
-  .mSCaption.my-blurb {
-      display: none !important;
+
+  .slider-content {
+    padding: 0 2%
   }
-  
-}
 
-@media (max-width: 768px) {
-  
-  #my-slider {
-    height: 300px;
+  .navigation {
+    padding: 0 2%;
   }
-  .infoBlock {
-    padding: 10px;
-    height: auto;
-    max-height: 100%;
+
+  .navigation-left {
+    display: none;
   }
-  .infoBlock h4 {
-    font-size: 14px;
-    line-height: 17px;
+
+  .number-pagination {
+    right: 2%;
   }
-  .infoBlock p {
-    font-size: 12px;
+  .slider-pagination {
+    left: 2%;
   }
-  
+
+  .css-slider .more-btn {
+    padding: 0 15px;
+    width: 175px;
+    height: 42px;
+  }
+
+  .css-slider .mre-btn:after {
+    top: 15px;
+  }
+
+  .css-slider > img {
+    right: 2%;
+  }
+
+  .slide-1 > img {
+    right: -110px;
+  }
 }
-
-
-
-
-/* 640 pixels */
-@media screen and (min-width: 40em) {
-   
-}
-
-/* 1024 pixels */
-@media screen and (min-width: 64em) {
-    
-}
-
-/* 1200 pixels */
-@media screen and (min-width: 75em) {
-    
-}
-
-/* 1280 pixels */
-@media screen and (min-width: 80em) {
-    
-}
-
-/* 1920 pixels */
-@media screen and (min-width: 120em) {
-
-}
-
-
-
-/* DEFAULT MEDIA QUERIES FOUNDATION 6.4.3 */
-/* Small only */
-@media screen and (max-width: 39.9375em) {}
-
-/* Medium and up */
-@media screen and (min-width: 40em) {}
-
-/* Medium only */
-@media screen and (min-width: 40em) and (max-width: 63.9375em) {}
-
-/* Large and up */
-@media screen and (min-width: 64em) {}
-
-/* Large only */
-@media screen and (min-width: 64em) and (max-width: 74.9375em) {}
