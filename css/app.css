@@ -64,11 +64,6 @@
     text-decoration: underline !important;
 }
 
-.heading {
-    background: #0181fe;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-}
 section.blurb {
     padding-top: 80px;
     padding-bottom: 60px;
@@ -95,23 +90,20 @@ section.footer {
 .wrapper-padding {
     padding-left: 20px !important;
     padding-right: 20px !important;
-    /* border:solid 1px red; */
+}
+.wrapper-padding.heading {
+    background: #0181fe;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.wrapper-padding.heading h1 {
+    color: #fff;
 }
 
 .bgd-white {
     background: #fff;
     padding: 60px 0;
     margin-bottom: -110px;
-}
-
-h1.main-heading {
-    color: #111;
-    padding-bottom: 1rem;
-    border-bottom: solid 2px #111;
-    margin-bottom: 60px;
-}
-.home h1.main-heading {
-    /* margin-bottom: 0; */
 }
 
 
