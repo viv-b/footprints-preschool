@@ -68,8 +68,8 @@ section.blurb {
     padding-top: 80px;
     padding-bottom: 60px;
     background: #fff url('../images/girls-rocking-horse.jpg') no-repeat;
-    background-size: 100% auto;
-    background-position: right center;
+    background-size: cover;
+    background-position: right top;
     position: relative;
     /* Skewed border */
     /* Below from: https://kilianvalkhof.com/2017/design/sloped-edges-with-consistent-angle-in-css/ */
