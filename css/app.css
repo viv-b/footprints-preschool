@@ -70,6 +70,7 @@ section.blurb {
     background: #fff url('../images/girls-rocking-horse.jpg') no-repeat;
     background-size: 100% auto;
     background-position: right center;
+    position: relative;
 }
 section.blurb::after{
   content: '';
