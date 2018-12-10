@@ -68,7 +68,7 @@ section.blurb {
     padding-top: 80px;
     padding-bottom: 60px;
     background: #fff url('../images/girls-rocking-horse.jpg') no-repeat;
-    background-size: cover;
+    background-size: 100% auto;
     background-position: right center;
 }
 section.shortcuts {
