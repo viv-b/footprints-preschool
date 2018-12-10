@@ -1,6 +1,6 @@
 .footer {
     background: #d4a300;
-    background: linear-gradient(to bottom, sandybrown, chocolate);
+    /* background: linear-gradient(to bottom, sandybrown, chocolate); */
     /* height: 50px; */
     position: relative;
 }
