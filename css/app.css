@@ -100,6 +100,7 @@ section.footer {
 .main-heading h1 {
     color: #fff;
 }
+/* Adapted from: https://codepen.io/btargac/pen/JGOGoj */
 .main-heading-sub {
     height: 20px;
     background: #ff722d;
