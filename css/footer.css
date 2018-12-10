@@ -1,8 +1,8 @@
 .footer {
     background: #d4a300;
-    background-image: radial-gradient(circle at 10px -5px, transparent 12px, white 13px), radial-gradient(circle at 10px -5px, transparent 12px, white 13px);
+    background-image: radial-gradient(circle at 10px -5px, transparent 12px, white 13px), radial-gradient(circle at 10px 15px, white 12px, transparent 13px;
     background-position: top left, top left;
-    background-size: 12px 12px;
+    background-size: 20px 20px;
     background-repeat: repeat-x;
 }
 .footer * {
