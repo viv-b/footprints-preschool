@@ -119,6 +119,9 @@ section.footer {
     background-repeat: repeat-x; */
     margin-bottom: 3rem;
 }
+.home .main-heading-sub {
+    margin-bottom: 0;
+}
 .bgd-white {
     background: #fff;
     padding: 60px 0;
