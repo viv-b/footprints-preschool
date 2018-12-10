@@ -64,6 +64,11 @@
     text-decoration: underline !important;
 }
 
+.heading {
+    background: #0181fe;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
 section.blurb {
     padding-top: 80px;
     padding-bottom: 60px;
