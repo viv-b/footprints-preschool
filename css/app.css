@@ -91,6 +91,7 @@ section.footer {
     padding-left: 20px !important;
     padding-right: 20px !important;
 }
+/* From: https://codepen.io/yangg/pen/mJBWPG */
 .main-heading {
     background: #0181fe;
     background-image: linear-gradient(45deg, #fff 50%, transparent 50%), linear-gradient(-45deg, #fff 50%, transparent 50%);
@@ -101,10 +102,13 @@ section.footer {
     padding-bottom: 2rem;
     margin-bottom: 3rem;
 }
+.main-heading 
 .main-heading h1 {
     color: #fff;
 }
-
+.main-heading-sub {
+    
+}
 .bgd-white {
     background: #fff;
     padding: 60px 0;
