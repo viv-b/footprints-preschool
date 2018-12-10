@@ -1,9 +1,31 @@
 .footer {
     background: #d4a300;
-    background-image: radial-gradient(circle at 10px -5px, transparent 12px, white 13px), radial-gradient(circle at 10px 15px, white 12px, transparent 13px;
-    background-position: top left, top left;
-    background-size: 20px 20px;
-    background-repeat: repeat-x;
+    background: linear-gradient(to bottom, sandybrown, chocolate);
+    /* height: 50px; */
+    position: relative;
+}
+.footer::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-repeat: repeat-x;
+  height: 10px;
+  background-size: 20px 20px;
+  background-image: radial-gradient(circle at 10px -5px, transparent 12px, white 13px);
+}
+
+.footer::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-repeat: repeat-x;
+  height: 15px;
+  background-size: 40px 20px;
+  background-image: radial-gradient(circle at 10px 15px, white 12px, transparent 13px);
 }
 .footer * {
     color: #fff;
