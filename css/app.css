@@ -71,6 +71,8 @@ section.blurb {
     background-size: 100% auto;
     background-position: right center;
     position: relative;
+    /* Skewed border */
+    /* Below from: https://kilianvalkhof.com/2017/design/sloped-edges-with-consistent-angle-in-css/ */
     clip-path: polygon(
     0 calc(100% - 6vw), /* left top */
     100% 0, /* right top */ 
