@@ -91,12 +91,12 @@ section.footer {
     padding-left: 20px !important;
     padding-right: 20px !important;
 }
-.wrapper-padding.heading {
+.main-heading {
     background: #0181fe;
     padding-top: 2rem;
     padding-bottom: 2rem;
 }
-.wrapper-padding.heading h1 {
+.main-heading h1 {
     color: #fff;
 }
 
