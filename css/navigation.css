@@ -132,12 +132,13 @@
         margin: 0 4px;
     }
     .navigation-wrapper li.active {
-        border-top: solid 2px #111;
-        border-bottom: solid 2px #111;
+        /* border-top: solid 2px #111;
+        border-bottom: solid 2px #111; */
     }
     .navigation-wrapper li.active > a {
-        color: #111;
-        background: transparent;
+        color: #fff;
+        background: #999;
+        border-radius: 10px;
     }
     .navigation-wrapper li:hover > a {
         color: #111;
