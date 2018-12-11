@@ -56,14 +56,25 @@ hero_image: /uploads/hero/hero-pirates-contact.jpg
             
             <div class="contact-details medium-5 large-offset-1 large-4 cell">
                 
-                <div class="editable">
-                	<h3>Contact Us</h3>
-                	<p></p>
-                	<h3>Postal Address</h3>
-                	<p></p>
-                	<h3>Hours</h3>
-                	<p></p>
-                </div>
+                {% assign contact = site.data.contact %}
+                
+                <h2 class="title">Contact Us</h2>
+                    
+                <p>{% if contact.location_description %}{{ contact.location_description }}{% endif %}</p>
+                    
+                    {% if activity.website_url %}
+                        <i class="fa fa-info-circle fa-fw" aria-hidden="true"></i>&nbsp; <a href="{{ activity.website_url }}">{{ activity.website_url | remove: "http://" | remove: "https://" | append: "@" | remove: "/@" | remove: "@" }}</a><br />
+                    {% endif %}
+                     {% if activity.facebook_url %}
+                        <i class="fa fa-facebook-square fa-fw" aria-hidden="true"></i>&nbsp; <a href="{{ activity.facebook_url }}">{{ activity.facebook_url | remove: "http://" | remove: "https://" | append: "@" | remove: "/@" | remove: "@" }}</a><br />
+                    {% endif %}
+                    {% if activity.phone %}
+                        <i class="fa fa-phone-square fa-fw" aria-hidden="true"></i>&nbsp; {{ activity.phone }}<br />
+                    {% endif %}
+                    {% if activity.email %}
+                        <i class="fa fa-paper-plane fa-fw" aria-hidden="true"></i>&nbsp; {{ activity.email }}
+                    {% endif %}
+                    </p>
                 
             </div>
         
