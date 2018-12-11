@@ -57,7 +57,7 @@ button:hover {
 }
 button#mobile-menu-toggle {
     background: rgba(0,0,0,0) !important;
-    color: #111;
+    color: #111 !important;
     font-size: 3rem;
     padding: 2px 8px 0 8px;
     line-height: 1;
