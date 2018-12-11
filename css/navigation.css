@@ -48,18 +48,19 @@
     outline: none;
 }
 .off-canvas .menu li.active {
-    border-top: solid 2px #111;
-    border-bottom: solid 2px #111;
+    /* border-top: solid 2px #111;
+    border-bottom: solid 2px #111; */
 }
 .off-canvas .menu li.active > a {
-    color: #111;
-    background: transparent;
+    color: #fff;
+    background: #ff722d;
+    border-radius: 10px;
 }
 .off-canvas .menu li:hover > a {
     color: #111;
 }
 .off-canvas .menu li.active:hover > a {
-    color: #111;
+    color: #fff;
 }
 .off-canvas .close-button {
     z-index: 1000;
