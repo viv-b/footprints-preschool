@@ -11,11 +11,11 @@
                 {% endif %}
                 
                 {% if contact.phone %}
-                    <h3><i class="fas fa-phone"></i>&nbsp; {{ contact.phone }}</h3>
+                    <h3 style="padding-right: 3rem;"><i class="fas fa-phone"></i>&nbsp; {{ contact.phone }}</h3>
                 {% endif %}
                 
                 {% if contact.facebook_url %}
-                    <h3 style="padding-right: 3rem;"><a href="{{ contact.facebook_url }}" target="_blank"><i class="fab fa-facebook-square"></i></a></h3>
+                    <h3 ><a href="{{ contact.facebook_url }}" target="_blank"><i class="fab fa-facebook-square"></i></a></h3>
                 {% endif %}
 
                 <small>&copy; {{ site.title }} {{ site.time | date: '%Y' }}</small>
