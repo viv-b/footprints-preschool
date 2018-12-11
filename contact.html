@@ -56,9 +56,9 @@ hero_image: /uploads/hero/hero-pirates-contact.jpg
             
             <div class="contact-details medium-5 large-offset-1 large-4 cell">
                 
-                {% assign contact = site.data.contact %}
-                
                 <h2 class="title">Contact Us</h2>
+                
+                {% assign contact = site.data.contact %}
                     
                 {% if contact.address_description %}
                     <p>{{ contact.address_description | newline_to_br }}</p>
