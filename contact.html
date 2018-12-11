@@ -60,7 +60,7 @@ hero_image: /uploads/hero/hero-pirates-contact.jpg
                 
                 <h2 class="title">Contact Us</h2>
                     
-                <p>{% if contact.location_description %}{{ contact.location_description }}{% endif %}</p>
+                {% if contact.location_description %}<p>{{ contact.location_description | newline_to_br }}</p>{% endif %}
                     
                     {% if activity.website_url %}
                         <i class="fa fa-info-circle fa-fw" aria-hidden="true"></i>&nbsp; <a href="{{ activity.website_url }}">{{ activity.website_url | remove: "http://" | remove: "https://" | append: "@" | remove: "/@" | remove: "@" }}</a><br />
