@@ -3,7 +3,21 @@
         <div class="grid-x grid-margin-x" style="position: relative;">
             
             <div class="cell text-center">
-                <a id="facebook-footer" href="https://www.facebook.com/Footprints-Preschool-240172169496852/" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                
+                {% assign contact = site.data.contact %}
+                    
+                {% if contact.address_description %}
+                    <p>{{ contact.address_description | newline_to_br }}</p>
+                {% endif %}
+                
+                {% if contact.phone %}
+                    <h3><i class="fas fa-phone"></i>&nbsp; {{ contact.phone }}</h3>
+                {% endif %}
+                
+                {% if contact.facebook_url %}
+                    <p><a href="{{ contact.facebook_url }}" target="_blank"><i class="fab fa-facebook-square"></i></a></p>
+                {% endif %}
+
                 <small>&copy; {{ site.title }} {{ site.time | date: '%Y' }}</small>
                 <!-- <br /> -->
                 <!-- <small>website: <a style="color: #fff;" href="http://www.lumina.net.nz">www.lumina.net.nz</a></small> -->
