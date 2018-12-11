@@ -65,15 +65,15 @@ hero_image: /uploads/hero/hero-pirates-contact.jpg
                 {% endif %}
                 
                 {% if contact.phone %}
-                    <p><i class="fa fa-phone-square fa-fw" aria-hidden="true"></i>&nbsp; {{ contact.phone }}</p>
+                    <p><i class="fas fa-phone"></i>&nbsp; {{ contact.phone }}</p>
                 {% endif %}
                     
                 {% if contact.email %}
-                     </p><i class="fa fa-paper-plane fa-fw" aria-hidden="true"></i>&nbsp; {{ contact.email }}</p>
+                    <p><a href="mailto:{{ contact.email }}"><i class="fas fa-paper-plane"></i>&nbsp; {{ contact.email }}</a></p>
                 {% endif %}
                 
                 {% if contact.facebook_url %}
-                    <p><a href="{{ activity.facebook_url }}"><i class="fa fa-facebook-square fa-fw" aria-hidden="true"></i></a></p>
+                    <p><a href="{{ activity.facebook_url }}"><i class="fab fa-facebook-square"></i></a></p>
                 {% endif %}
                    
                 
