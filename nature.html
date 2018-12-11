@@ -15,9 +15,14 @@ photos:
         <div class="grid-x grid-margin-x">
             
             <div class="large-offset-2 large-8 cell">
-                <div class="editable">
                 
+                <div class="editable">
                 </div>
+                
+                {% if page.photos[0].gallery_image %}
+                    {% include lightbox.html small="2" medium="3" large="4" %}
+                {% endif %}
+                
             </div>
         
         </div>
