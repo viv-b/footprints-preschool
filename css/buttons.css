@@ -57,7 +57,6 @@ button:hover {
 }
 button#mobile-menu-toggle {
     background: rgba(0,0,0,0) !important;
-    font-family: 'Yanone Kaffeesatz', sans-serif;
     color: #111;
     font-size: 3rem;
     padding: 2px 8px 0 8px;
