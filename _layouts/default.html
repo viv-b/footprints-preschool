@@ -116,8 +116,14 @@
 		<script src="{{ site.baseurl }}/js/app.js"></script>
 		<script src="{{ site.baseurl }}/js/misc.js"></script>
 		
-		<script src="{{ site.baseurl }}/js/lightbox/imagelightbox.js"></script>
-	    <script src="{{ site.baseurl }}/js/lightbox/imagelightbox-init.js"></script>
+	    <script src="{{ site.baseurl }}/js/lightbox/js/lightgallery-all.min.js"></script>
+        <!-- Mousewheel not essential but nice addition to scroll images in gallery -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+        <script>
+            $('#lightbox').lightGallery({
+                selector: '.cell'
+            });
+        </script>
 	    
 	    <script>
 	        $( document ).ready(function() {
