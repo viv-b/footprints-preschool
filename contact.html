@@ -60,21 +60,22 @@ hero_image: /uploads/hero/hero-pirates-contact.jpg
                 
                 <h2 class="title">Contact Us</h2>
                     
-                {% if contact.address_description %}<p>{{ contact.address_description | newline_to_br }}</p>{% endif %}
+                {% if contact.address_description %}
+                    <p>{{ contact.address_description | newline_to_br }}</p>
+                {% endif %}
+                
+                {% if contact.phone %}
+                    <p><i class="fa fa-phone-square fa-fw" aria-hidden="true"></i>&nbsp; {{ contact.phone }}</p>
+                {% endif %}
                     
-                    {% if activity.website_url %}
-                        <i class="fa fa-info-circle fa-fw" aria-hidden="true"></i>&nbsp; <a href="{{ activity.website_url }}">{{ activity.website_url | remove: "http://" | remove: "https://" | append: "@" | remove: "/@" | remove: "@" }}</a><br />
-                    {% endif %}
-                     {% if activity.facebook_url %}
-                        <i class="fa fa-facebook-square fa-fw" aria-hidden="true"></i>&nbsp; <a href="{{ activity.facebook_url }}">{{ activity.facebook_url | remove: "http://" | remove: "https://" | append: "@" | remove: "/@" | remove: "@" }}</a><br />
-                    {% endif %}
-                    {% if activity.phone %}
-                        <i class="fa fa-phone-square fa-fw" aria-hidden="true"></i>&nbsp; {{ activity.phone }}<br />
-                    {% endif %}
-                    {% if activity.email %}
-                        <i class="fa fa-paper-plane fa-fw" aria-hidden="true"></i>&nbsp; {{ activity.email }}
-                    {% endif %}
-                    </p>
+                {% if contact.email %}
+                     </p><i class="fa fa-paper-plane fa-fw" aria-hidden="true"></i>&nbsp; {{ contact.email }}</p>
+                {% endif %}
+                
+                {% if contact.facebook_url %}
+                    <p><a href="{{ activity.facebook_url }}"><i class="fa fa-facebook-square fa-fw" aria-hidden="true"></i></a></p>
+                {% endif %}
+                   
                 
             </div>
         
