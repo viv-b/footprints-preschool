@@ -39,12 +39,7 @@
 	<link rel="stylesheet" href="{{ site.baseurl }}/css/image-lightbox.css" />
 	<link rel="stylesheet" href="{{ site.baseurl }}/css/map.css" />
 	{% if page.url == "/" %}
-	<link rel="stylesheet" href="{{ site.baseurl }}/mightyslider/css/mightyslider.css" />
 	<link rel="stylesheet" href="{{ site.baseurl }}/css/slider.css" />
-	{% endif %}
-	
-	{% if page.url == "/contact/" %}
-	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
 	{% endif %}
 
     <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" rel="stylesheet" />
@@ -126,11 +121,6 @@
 		
 		<script src="{{ site.baseurl }}/js/lightbox/imagelightbox.js"></script>
 	    <script src="{{ site.baseurl }}/js/lightbox/imagelightbox-init.js"></script>
-	    
-	    {% if page.url == "/" %}
-	    <script src="{{ site.baseurl }}/mightyslider/js/mightyslider.min.js"></script>
-	    <script src="{{ site.baseurl }}/mightyslider/js/tweenlite.js"></script>
-	    {% endif %}
 	    
 	    <script>
 	        $( document ).ready(function() {
