@@ -1,3 +1,7 @@
+section.footer {
+    padding: 40px 0 30px 0;
+}
+
 .footer {
     background: #d4a300;
     /* background: linear-gradient(to bottom, sandybrown, chocolate); */
