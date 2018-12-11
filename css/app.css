@@ -91,9 +91,6 @@ section.shortcuts {
 section.shortcuts p {
     color: #111;
 }
-section.footer {
-    padding: 40px 0;
-}
 
 /* Some extra padding for rows to get content away from edge of screen when smaller views */
 .wrapper-padding {
