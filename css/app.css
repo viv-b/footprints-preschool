@@ -34,35 +34,6 @@
     background: #ddd;
     padding: 2rem;
 }
-.blog .callout.sidebar {
-    background: #fff;
-}
-.full-width {
-    display: block;
-    width: 100% !important;
-}
-
-.main-wrapper {
-    padding-bottom: 110px;
-}
-.home .main-wrapper {
-    margin-top: 0;
-    margin-bottom: -110px;
-}
-.padding-bottom {
-    padding-bottom: 60px !important;
-}
-
-/* CARDS IN SUMMARY PAGES AND BLOG SUMMARY */
-.card-section h4 {
-    text-transform: uppercase;
-}
-.card-section h4 a {
-    text-decoration: none !important;
-}
-.card-section h4 a:hover {
-    text-decoration: underline !important;
-}
 
 section.blurb {
     padding-top: 80px;
