@@ -3,6 +3,7 @@ url: 'https://www.footprintspreschool.co.nz'
 baseurl:
 
 url_dev: 'https://haloed-bear.cloudvent.net'
+imgix_url: 'https://footprints-preschool.imgix.net'
 
 kramdown:
   auto_ids: false
