@@ -67,7 +67,8 @@
 section.blurb {
     padding-top: 80px;
     padding-bottom: 60px;
-    background: #fff url('../images/girls-rocking-horse.jpg') no-repeat;
+    /* background: #fff url('../images/girls-rocking-horse.jpg') no-repeat; */
+    background: #fff url('../images/pirate-kids.jpg') no-repeat;
     background-size: cover;
     background-position: right top;
     position: relative;
