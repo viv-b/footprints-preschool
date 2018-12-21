@@ -34,12 +34,18 @@ _options:
     height: 400
     resize_style: contain
     expandable: true
-    uploads_dir: "uploads/hero-images"
+    uploads_dir: "uploads/hero/"
+  gallery_image:
+    width: 1600
+    height: 1400
+    resize_style: contain
+    expandable: true
+    uploads_dir: "uploads/gallery/"
   content:
     width: 800
     height: 1200
     resize_style: contain
-    uploads_dir: "uploads/content-images"
+    uploads_dir: "uploads/content/"
   _block:
     format: p h1 h2 h3 h4 h5 h6 pre address div
     bold: true
