@@ -1,0 +1,200 @@
+.editor-link,
+.editor-only {
+    display: none;
+}
+.cms-editor-active .editor-link,
+.cms-editor-active .editor-only {
+    display: block;
+}
+.editor-link a {
+    display: inline-block;
+    background-color: #f7e064;
+    color: #333;
+    box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 2px;
+    text-decoration: none !important;
+    padding: 6px 4px;
+    font-size: 1.2rem;
+}
+.editor-only.sort-number {
+    background-color: #f7e064;
+    color: #333;
+    box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 2px;
+    padding: 6px 4px;
+    font-size: 1.2rem;
+}
+
+.print-logo {
+    display: none;
+}
+
+.callout {
+    border: none;
+    background: #ddd;
+    padding: 2rem;
+}
+.blog .callout.sidebar {
+    background: #fff;
+}
+.full-width {
+    display: block;
+    width: 100% !important;
+}
+
+.main-wrapper {
+    padding-bottom: 110px;
+}
+.home .main-wrapper {
+    margin-top: 0;
+    margin-bottom: -110px;
+}
+.padding-bottom {
+    padding-bottom: 60px !important;
+}
+
+/* CARDS IN SUMMARY PAGES AND BLOG SUMMARY */
+.card-section h4 {
+    text-transform: uppercase;
+}
+.card-section h4 a {
+    text-decoration: none !important;
+}
+.card-section h4 a:hover {
+    text-decoration: underline !important;
+}
+
+section.blurb {
+    padding-top: 80px;
+    padding-bottom: 60px;
+    /* background: #fff url('../images/girls-rocking-horse.jpg') no-repeat; */
+    background: #fff url('../images/pirate-kids.jpg') no-repeat;
+    background-size: cover;
+    background-position: right top;
+    position: relative;
+    /* Skewed border */
+    /* Below from: https://kilianvalkhof.com/2017/design/sloped-edges-with-consistent-angle-in-css/ */
+    clip-path: polygon(
+        0 0, /* left top */
+        100% 0, /* right top */ 
+        100% calc(100% - 6vw), /* right bottom */
+        0 100% /* left bottom */
+    );
+}
+
+/* From: https://codepen.io/yangg/pen/mJBWPG */
+.main-heading {
+    background: #0181fe;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.main-heading h1 {
+    color: #fff;
+}
+/* Adapted from: https://codepen.io/btargac/pen/JGOGoj */
+.main-heading-sub {
+    height: 16px;
+    background: #ff722d;
+    /* background-image: linear-gradient(45deg, #fff 50%, transparent 50%), linear-gradient(-45deg, #fff 50%, transparent 50%);
+    background-position: bottom left, bottom left;
+    background-size: 16px 16px;
+    background-repeat: repeat-x; */
+    margin-bottom: 3rem;
+}
+.home .main-heading-sub {
+    margin-bottom: 0;
+}
+.bgd-white {
+    background: #fff;
+    padding: 60px 0;
+    margin-bottom: -110px;
+}
+
+
+/* -------- */
+/* LINKS    */
+/* -------- */
+
+a:not(button),
+a:not(.button) {
+    color: #a08a7d; /* dark blue */
+}
+a:not(button):hover,
+a:not(.button):hover {
+    color: #45362f; /* brown */
+}
+
+.main-wrapper a:not(button),
+.main-wrapper a:not(.button) {
+    text-decoration: underline;
+    color: #546a3b;
+}
+.main-wrapper a:not(button):hover,
+.main-wrapper a:not(.button):hover {
+    color: #546a3b;
+}
+
+a[href$=".pdf"]:before {
+    content: "\f1c1 \00a0"; /* this is your text. You can also use UTF-8 character codes as I do here. This is FA symbol for PDF and the a 'space' */
+    font-family: FontAwesome;
+}
+a[href$=".docx"]:before {
+    content: "\f1c8 \00a0"; /* this is your text. You can also use UTF-8 character codes as I do here. This is FA symbol for WORD and the a 'space' */
+    font-family: FontAwesome;
+}
+
+/* 640 pixels */
+@media screen and (min-width: 40em) {
+   
+}
+
+/* 1024 pixels */
+@media screen and (min-width: 64em) {
+    
+    .main-wrapper {
+        margin-top: 90px;
+    }
+
+}
+
+/* 1200 pixels */
+@media screen and (min-width: 75em) {
+    
+}
+
+/* 1280 pixels */
+@media screen and (min-width: 80em) {
+    
+}
+
+/* 1440 pixels */
+@media screen and (min-width: 90em) {
+    
+    .main-wrapper {
+        margin-top: 105px;
+    }
+   
+}
+
+/* 1920 pixels */
+@media screen and (min-width: 120em) {
+
+}
+
+
+
+/* DEFAULT MEDIA QUERIES FOUNDATION 6.4.3 */
+/* Small only */
+@media screen and (max-width: 39.9375em) {}
+
+/* Medium and up */
+@media screen and (min-width: 40em) {}
+
+/* Medium only */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {}
+
+/* Large and up */
+@media screen and (min-width: 64em) {}
+
+/* Large only */
+@media screen and (min-width: 64em) and (max-width: 74.9375em) {}
