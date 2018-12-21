@@ -60,7 +60,7 @@
 .boy {
    position: absolute;
    left: -200px;
-   bottom: -70px;
+   bottom: -50px;
    z-index: 999;
    max-width: 450px;
 }
