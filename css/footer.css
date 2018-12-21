@@ -26,9 +26,11 @@
 }
 .about .footer::before {
     background-image: 0 !important;
+    border: solid 2px green;
 }
 .about .footer::after {
     background-image: 0 !important;
+    border: solid 2px green;
 }
 .footer * {
     color: #fff;
