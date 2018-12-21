@@ -19,8 +19,6 @@
             {% endfor %}
           </div>
           
-          <a class="button slider-booking-button hide-for-small-only" href="/booking/"><i class="fas fa-calendar-alt"></i> Book Online</a>
-          
           {% for slide in site.data.slider.slides %}
     
           <div class="css-slider slide-{{ forloop.index }}" style="{% if slide.image %}background-image: url('{{ site.baseurl }}{{ slide.image }}');{% endif %}">
