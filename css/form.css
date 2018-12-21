@@ -7,10 +7,12 @@ form {
 
 form input {
     margin-bottom: 20px !important;
+    border: solid 2px #0181fe;
 }
 
 form textarea {
     min-height: 175px;
+    border: solid 2px #0181fe;
 }
 
 form label {
