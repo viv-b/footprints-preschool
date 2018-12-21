@@ -1,8 +1,8 @@
 title: Footprints Preschool
-url: 'https://haloed-bear.cloudvent.net'
+url: 'https://www.footprintspreschool.co.nz'
 baseurl:
 
-url_dev:
+url_dev: 'https://haloed-bear.cloudvent.net'
 
 kramdown:
   auto_ids: false
