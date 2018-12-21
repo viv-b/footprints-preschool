@@ -62,7 +62,7 @@ $(document).ready(function(){
  
   function anchorScroll(this_obj, that_obj, base_speed) {
       
-    var padding = 100 // added by Viv. Allow for height of to navigation bar
+    var padding = 0; // added by Viv. Allow for height of to navigation bar
     
     var this_offset = this_obj.offset();
     var that_offset = that_obj.offset();
