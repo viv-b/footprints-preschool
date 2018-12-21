@@ -71,6 +71,9 @@ section.blurb {
     padding: 60px 0;
     margin-bottom: -110px;
 }
+.main-wrapper {
+    border: solid 1px red;
+}
 
 
 /* -------- */
