@@ -1,7 +1,7 @@
 ---
 name: Tyler
 position:
-image:
+image: /uploads/staff/tyler-profile.jpg
 sort_number: 8
 ---
 
