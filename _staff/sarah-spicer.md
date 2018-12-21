@@ -1,7 +1,7 @@
 ---
 name: Sarah Spicer
 position:
-image:
+image: /uploads/staff/sarah-spicer.jpg
 sort_number: 6
 ---
 
