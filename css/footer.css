@@ -27,7 +27,7 @@
 .about .footer::before {
     background-image: 0;
 }
-.about footer::after {
+.about .footer::after {
     background-image: 0;
 }
 .footer * {
