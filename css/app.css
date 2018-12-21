@@ -50,6 +50,9 @@ section.blurb {
     );
 }
 
+.philosophy {
+    background: #d4a300;
+}
 .main-heading {
     background: #0181fe;
     padding-top: 2rem;
