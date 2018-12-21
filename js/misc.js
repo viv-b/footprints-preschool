@@ -45,4 +45,35 @@ $(document).ready(function(){
     });
   });
   
+  // SCROLL TO ANCHOR LINK
+  // From here: https://jonsuh.com/blog/better-scroll-to-anchor-links/
+  
+  $(".anchor-link").click(function(e) {
+    e.preventDefault();
+    
+    if($(this).attr("data-speed") == "slow") {
+        var speed= 2200;
+    } else {
+        var speed = 750;
+    }
+    // The 5000 below is in ms per 1,000 pixels. Example was set to 100 but a bit too fast
+    anchorScroll( $(this), $($(this).attr("href")), speed );
+  });
+ 
+  function anchorScroll(this_obj, that_obj, base_speed) {
+      
+    var padding = 100 // added by Viv. Allow for height of to navigation bar
+    
+    var this_offset = this_obj.offset();
+    var that_offset = that_obj.offset();
+    var offset_diff = Math.abs(that_offset.top - this_offset.top);
+ 
+    var speed = (offset_diff * base_speed) / 1000;
+ 
+    $("html,body").animate({
+      scrollTop: that_offset.top - padding
+    }, speed);
+  }
+  
+  
 });
