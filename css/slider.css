@@ -1,0 +1,340 @@
+/* Idea taken from: https://designmodo.com/create-full-screen-slider/ */
+/* IMPORTANT NOTE: One class was 'slider' but since foundation also uses the same class, changed to 'css-slider' */
+
+/* Viv added this outer wrapper to allow full-screen but access to content below */
+.css-slider-wrapper-outer {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  /* Avoid setting width to 100vw or have scrollbar appear bottom of page */ 
+  /* width: 100vw; */
+  height: 100vh;
+}
+
+
+/* Slider wrapper */
+.css-slider-wrapper {
+  display: block;
+  position: absolute;
+  z-index: 2;
+  overflow: hidden;
+  background: #fff;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+/* Psuh the radio buttons to the bottom of the screen and slightly off to the side. if keep buttons at top */
+/* and the screen is scrolled down somewhat, the whole page jumps back to the top. It's clicking on the labels for the buttons */
+/* that initiate the slide animation not the buttons themselves. */
+.css-slider-wrapper input[type=radio] {
+    position: absolute;
+    bottom: 0;
+    left: -20px;
+}
+
+/* Slider */
+.css-slider {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 1;
+  z-index: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  -webkit-transition: -webkit-transform 1600ms;
+  transition: -webkit-transform 1600ms, transform 1600ms;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  background-size: cover !important;
+  background-position: center center;
+}
+
+/* Slides Background Color */
+.slide-1 {
+  left: 0;
+}
+.slide-2 {
+  left: 100%
+}
+.slide-3 {
+  left: 200%
+}
+.slide-4 {
+  left: 300%;
+}
+.slide-5 {
+  left: 400%;
+}
+.slide-6 {
+  left: 500%;
+}
+.css-slider {
+  display: flex;
+  justify-content: flex-start;
+}
+.slider-content {
+  position: absolute;
+  bottom: 0;
+  padding: 60px 80px 70px 80px;
+  background: rgba(0,0,0,0.3);
+  width: 100%;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+50,000000+100&0.65+0,0+100 */
+  background: -moz-linear-gradient(top, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0.33) 50%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0.33) 50%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0.33) 50%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+}
+.slider-content * {
+  color: #fff;
+}
+.slider-content .inner {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+/* Slider Inner Slide Effect */
+.css-slider h2 {
+  font-size: 3rem;
+  font-weight: 300;
+  line-height: 1.2;
+  opacity: 0;
+  -webkit-transform: translateX(500px);
+  transform: translateX(500px);
+  margin-top: 0;
+  letter-spacing: 2px;
+}
+
+.css-slider h3 {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.2;
+  opacity: 0;
+  -webkit-transform: translateX(500px);
+  transform: translateX(500px);
+}
+.css-slider .fa-chevron-down {
+    opacity: 0;
+    font-size: 2.5rem;
+    font-weight: 700;
+    -webkit-transform: translateX(500px);
+    transform: translateX(500px);
+    padding: 20px 0;
+}
+
+.css-slider .fa-chevron-down {
+  outline: none;
+}
+
+/* Animations */
+.css-slider h2 {
+  -webkit-transition: opacity 800ms, -webkit-transform 800ms;
+  transition: transform 800ms, opacity 800ms;
+  -webkit-transition-delay: 1s; /* Safari */
+  transition-delay: 1s;
+}
+.css-slider h3 {
+  -webkit-transition: opacity 800ms, -webkit-transform 800ms;
+  transition: transform 800ms, opacity 800ms;
+  -webkit-transition-delay: 1.4s; /* Safari */
+  transition-delay: 1.4s;
+}
+.css-slider .fa-chevron-down {
+  -webkit-transition: opacity 800ms, -webkit-transform 800ms;
+  transition: transform 800ms, opacity 800ms;
+  -webkit-transition-delay: 1.6s; /* Safari */
+  transition-delay: 1.6s;
+}
+
+/* Slider Pagger */
+.slider-pagination {
+  position: absolute;
+  bottom: 30px;
+  left: 5%;
+  z-index: 1000;
+  display: flex;
+  align-items: center; /* Vertical alignment */
+  /* justify-content: center; */ /* Horizontal alignment */
+  /* width: 100%; */
+}
+.slider-pagination label {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+  background: #fff;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.slider-booking-button {
+  position: absolute;
+  bottom: 10px;
+  right: 5%;
+  z-index: 1000;
+  padding: .6em 2em !important;
+}
+
+/* Slider Pagger Event */
+.slide-radio1:checked ~ .slider-pagination .page1,
+.slide-radio2:checked ~ .slider-pagination .page2,
+.slide-radio3:checked ~ .slider-pagination .page3,
+.slide-radio4:checked ~ .slider-pagination .page4,
+.slide-radio5:checked ~ .slider-pagination .page5,
+.slide-radio6:checked ~ .slider-pagination .page6 {
+  width: 14px;
+  height: 14px;
+  border: 2px solid #ea2e49;
+  background: transparent;
+}
+
+/* Slider Slide Effect */
+.slide-radio1:checked ~ .css-slider {
+  -webkit-transform: translateX(0%);
+  transform: translateX(0%);
+}
+.slide-radio2:checked ~ .css-slider {
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+}
+.slide-radio3:checked ~ .css-slider {
+  -webkit-transform: translateX(-200%);
+  transform: translateX(-200%);
+}
+.slide-radio4:checked ~ .css-slider {
+  -webkit-transform: translateX(-300%);
+  transform: translateX(-300%);
+}
+.slide-radio5:checked ~ .css-slider {
+  -webkit-transform: translateX(-400%);
+  transform: translateX(-400%);
+}
+.slide-radio6:checked ~ .css-slider {
+  -webkit-transform: translateX(-500%);
+  transform: translateX(-500%);
+}
+
+.slide-radio1:checked ~ .slide-1 h2,
+.slide-radio2:checked ~ .slide-2 h2,
+.slide-radio3:checked ~ .slide-3 h2,
+.slide-radio4:checked ~ .slide-4 h2,
+.slide-radio5:checked ~ .slide-5 h2,
+.slide-radio6:checked ~ .slide-6 h2,
+.slide-radio1:checked ~ .slide-1 h3,
+.slide-radio2:checked ~ .slide-2 h3,
+.slide-radio3:checked ~ .slide-3 h3,
+.slide-radio4:checked ~ .slide-4 h3,
+.slide-radio5:checked ~ .slide-5 h3,
+.slide-radio6:checked ~ .slide-6 h3,
+.slide-radio1:checked ~ .slide-1 .fa-chevron-down,
+.slide-radio2:checked ~ .slide-2 .fa-chevron-down,
+.slide-radio3:checked ~ .slide-3 .fa-chevron-down,
+.slide-radio4:checked ~ .slide-4 .fa-chevron-down,
+.slide-radio5:checked ~ .slide-5 .fa-chevron-down,
+.slide-radio6:checked ~ .slide-6 .fa-chevron-down {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  opacity: 1;
+}
+
+
+/* ----------- */
+/* PRE LOADER */
+/* ---------- */
+/* Viv Added Based on: https://ihatetomatoes.net/create-custom-preloading-screen/ */
+/* Specific spinner from: http://tobiasahlin.com/spinkit/ */
+
+.mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  background: #000;
+}
+#loader {
+  display: block;
+  position: relative;
+  left: 50%;
+  top: 40vh;
+  width: 120px;
+  height: 120px;
+  margin: -60px 0 0 -60px;
+  background-color: #ccc;
+  border-radius: 100%;  
+  -webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
+  animation: sk-scaleout 1.0s infinite ease-in-out;
+}
+
+@-webkit-keyframes sk-scaleout {
+  0% { -webkit-transform: scale(0) }
+  100% {
+    -webkit-transform: scale(1.0);
+    opacity: 0;
+  }
+}
+
+@keyframes sk-scaleout {
+  0% { 
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  } 100% {
+    -webkit-transform: scale(1.0);
+    transform: scale(1.0);
+    opacity: 0;
+  }
+}
+ 
+/* JavaScript Turned Off */
+.no-js .mask {
+    display: none;
+}
+
+@media screen and (min-width: 40em) {
+   
+}
+
+/* 1024 pixels */
+@media screen and (min-width: 64em) {
+
+    .css-slider h2 {
+        font-size: 3.5rem;
+    }
+    .css-slider h3 {
+        font-size: 2rem;
+    }
+    .css-slider .fa-chevron-down {
+        font-size: 3.5rem;
+    }
+}
+
+/* 1200 pixels */
+@media screen and (min-width: 75em) {
+    
+}
+
+/* 1280 pixels */
+@media screen and (min-width: 80em) {
+    
+  
+}
+
+/* 1440 pixels */
+@media screen and (min-width: 90em) {
+   
+}
+
+/* 1920 pixels */
+@media screen and (min-width: 120em) {
+
+}
