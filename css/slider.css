@@ -274,6 +274,7 @@
   border-radius: 100%;  
   -webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
   animation: sk-scaleout 1.0s infinite ease-in-out;
+  background-image: url(../images-foot-icon.gif);
 }
 
 @-webkit-keyframes sk-scaleout {
