@@ -1,6 +1,6 @@
 .footer {
-    background: #d4a300;
     position: relative;
+    background: #d4a300;
 }
 .footer::before {
     content: "";
