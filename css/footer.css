@@ -25,12 +25,10 @@
     background-image: radial-gradient(circle at 10px 0px,#fff 12px,transparent 13px);
 }
 .about .footer::before {
-    background-image: 0 !important;
-    border: solid 2px green;
+    height: 0;
 }
 .about .footer::after {
-    background-image: 0 !important;
-    border: solid 2px green;
+    height: 0;
 }
 .footer * {
     color: #fff;
