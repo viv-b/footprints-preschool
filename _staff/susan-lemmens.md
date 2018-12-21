@@ -1,7 +1,7 @@
 ---
 name: Susan Lemmens
 position:
-image:
+image: /uploads/staff/susan-lemmens-profile.jpg
 sort_number: 3
 ---
 
