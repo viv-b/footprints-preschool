@@ -1,0 +1,44 @@
+div class="mask hide-for-print">
+    <div id="loader" class="rotating"></div>
+</div>
+
+
+<div class="css-slider-wrapper-outer hide-for-print">
+
+    <!-- Slider Wrapper -->
+    <div class="css-slider-wrapper">
+          
+          {% for slide in site.data.slider.slides %}
+          <input type="radio" name="slider" class="slide-radio{{ forloop.index }}" id="slider_{{ forloop.index }}" />
+          {% endfor %}
+    
+          <!-- Slider Pagination -->
+          <div class="slider-pagination">
+            {% for slide in site.data.slider.slides %}
+            <label for="slider_{{ forloop.index }}" class="page{{ forloop.index }}"></label>
+            {% endfor %}
+          </div>
+          
+          <a class="button slider-booking-button hide-for-small-only" href="/booking/"><i class="fas fa-calendar-alt"></i> Book Online</a>
+          
+          {% for slide in site.data.slider.slides %}
+    
+          <div class="css-slider slide-{{ forloop.index }}" style="{% if slide.image %}background-image: url('{{ site.baseurl }}{{ slide.image }}');{% endif %}">
+
+            <div class="slider-content">
+                <div class="inner">
+                    <h3>{{ slide.sub_title }}</h3>
+                    <h2>{{ slide.title }}</h2>
+                    <a href="#main" class="anchor-link" data-speed="slow"><i class="fas fa-chevron-down"></i></a>
+                </div>
+            </div>
+            
+            <!-- <button type="button" class="more-btn button" name="button">More...</button> -->
+            
+          </div>
+          
+          {% endfor %}
+          
+    </div>
+
+</div>
