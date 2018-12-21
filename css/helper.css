@@ -1,0 +1,73 @@
+/* Some extra padding for rows to get content away from edge of screen when smaller views */
+.wrapper-padding {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+}
+
+.padding-top-small {
+    padding-top: 30px;
+}
+.padding-top-medium {
+    padding-top: 50px;
+}
+.padding-top-large {
+    padding-top: 80px;
+}
+.padding-top-xlarge {
+    padding-top: 140px;
+}
+
+.padding-bottom-small {
+    padding-bottom: 25px;
+}
+.padding-bottom-medium {
+    padding-bottom: 40px;
+}
+.padding-bottom-large {
+    padding-bottom: 70px;
+}
+.padding-bottom-xlarge {
+    padding-bottom: 150px;
+}
+
+.text-white * {
+    color: #fff !important;
+}
+
+/* 640 pixels */
+@media screen and (min-width: 40em) {
+   
+    .wrapper-padding {
+        padding-left: 30px !important;
+        padding-right: 30px !important;
+    }
+}
+
+/* 1024 pixels */
+@media screen and (min-width: 64em) {
+
+}
+
+/* 1200 pixels */
+@media screen and (min-width: 75em) {
+    
+}
+
+/* 1280 pixels */
+@media screen and (min-width: 80em) {
+    
+    .wrapper-padding {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+}
+
+/* 1440 pixels */
+@media screen and (min-width: 90em) {
+   
+}
+
+/* 1920 pixels */
+@media screen and (min-width: 120em) {
+
+}
