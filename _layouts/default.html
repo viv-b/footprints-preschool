@@ -60,7 +60,7 @@
    
 
 </head>
-	<body class="{% if page.url == '/' %}home{% elsif page.url contains 'contact' %}contact{% elsif page.url contains 'blog' %}blog{% endif %}">
+	<body class="{% if page.url == '/' %}home{% else %}{{ page.path | remove: '.html' | remove: '.md' }}{% endif %}">
 	    
 	    <div class="off-canvas position-left" id="my-off-canvas" data-off-canvas>
             {% include navigation-mobile.html %}
