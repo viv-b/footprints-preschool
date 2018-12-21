@@ -1,3 +1,21 @@
+/* Window onload fires after EVERYTHING is laoded */
+$(window).on("load", function () {
+
+	/* preloader */
+    $("#loader").delay(500).fadeOut(); 
+	$(".mask").delay(1000).fadeOut("slow");
+	
+	// Activate the first slide
+    function activateSlide1() {     
+        $("#slider_1").attr('checked', true);
+    }
+
+    // use setTimeout() to execute
+    setTimeout(activateSlide1,1000);
+ 
+});
+
+
 $(document).ready(function(){
   
   
