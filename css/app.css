@@ -36,9 +36,6 @@
 }
 
 section.blurb {
-    padding-top: 80px;
-    padding-bottom: 60px;
-    /* background: #fff url('../images/girls-rocking-horse.jpg') no-repeat; */
     background: #fff url('../images/pirate-kids.jpg') no-repeat;
     background-size: cover;
     background-position: right top;
@@ -53,7 +50,6 @@ section.blurb {
     );
 }
 
-/* From: https://codepen.io/yangg/pen/mJBWPG */
 .main-heading {
     background: #0181fe;
     padding-top: 2rem;
@@ -62,14 +58,9 @@ section.blurb {
 .main-heading h1 {
     color: #fff;
 }
-/* Adapted from: https://codepen.io/btargac/pen/JGOGoj */
 .main-heading-sub {
     height: 16px;
     background: #ff722d;
-    /* background-image: linear-gradient(45deg, #fff 50%, transparent 50%), linear-gradient(-45deg, #fff 50%, transparent 50%);
-    background-position: bottom left, bottom left;
-    background-size: 16px 16px;
-    background-repeat: repeat-x; */
     margin-bottom: 3rem;
 }
 .home .main-heading-sub {
