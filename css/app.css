@@ -94,10 +94,8 @@
     color: #fff;
 }
 .staff-photo-container {
-    text-align: center;
-}
-.staff-photo-container img {
-    max-width: 375px;
+    margin: 0 auto;
+    max-width: 350px;
 }
 
 /* ----------- */
