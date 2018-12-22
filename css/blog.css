@@ -42,8 +42,8 @@
 /* 1200 pixels */
 @media screen and (min-width: 75em) {
     
-    .blog sidebar {
-        padding-left: 40px;
+    .blog .sidebar {
+        padding-left: 30px;
     }
 }
 
