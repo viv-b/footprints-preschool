@@ -49,6 +49,7 @@
    top: -90px;
    right: 0;
    z-index: 999;
+   max-width:68px;
 }
 
 /* 640 pixels */
@@ -67,6 +68,7 @@
     .footer .footprint {
         top: -90px;
         right: 0;
+        max-width: auto;
     }
 }
 
