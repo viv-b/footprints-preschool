@@ -170,6 +170,16 @@ a[href$=".docx"]:before {
 /* 1200 pixels */
 @media screen and (min-width: 75em) {
     
+     .main-heading .footprint {
+        left: -90px;
+        right: auto;
+        z-index: 999;
+        -moz-transform: scale(1, 1);
+        -o-transform: scale(1, 1);
+        -webkit-transform: scale(1, 1);
+        transform: scale(1, 1);
+    }
+    
 }
 
 /* 1280 pixels */
@@ -180,15 +190,7 @@ a[href$=".docx"]:before {
         bottom: -110px;
         max-width: 450px;
     }
-    .main-heading .footprint {
-        left: -90px;
-        right: auto;
-        z-index: 999;
-        -moz-transform: scale(1, 1);
-        -o-transform: scale(1, 1);
-        -webkit-transform: scale(1, 1);
-        transform: scale(1, 1);
-    }
+   
 }
 
 /* 1440 pixels */
