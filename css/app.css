@@ -111,10 +111,14 @@
     color: #fff !important;
 }
 .main-heading .footprint {
-   position: absolute;
-   top: -40px;
-   left: -90px;
-   z-index: 999;
+    position: absolute;
+    top: -40px;
+    right: 0;
+    z-index: 999;
+    -moz-transform: scale(-1, -1);
+    -o-transform: scale(-1, -1);
+    -webkit-transform: scale(-1, -1);
+    transform: scale(-1, -1);
 }
 
 /* -------- */
@@ -175,6 +179,15 @@ a[href$=".docx"]:before {
         left: -200px;
         bottom: -110px;
         max-width: 450px;
+    }
+    .main-heading .footprint {
+        left: -90px;
+        right: auto;
+        z-index: 999;
+        -moz-transform: scale(1, 1);
+        -o-transform: scale(1, 1);
+        -webkit-transform: scale(1, 1);
+        transform: scale(1, 1);
     }
 }
 
