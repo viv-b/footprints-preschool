@@ -2,7 +2,7 @@
 title: Santa Claus Comes to Town
 meta_title:
 description:
-date:
+date: 2018-12-22 20:04:06
 summary_image:
 photos:
   - gallery_image:
@@ -24,3 +24,4 @@ _options:
     uploads_dir: uploads/blog/gallery
 _section_id: blog
 ---
+
