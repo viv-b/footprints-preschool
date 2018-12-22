@@ -180,7 +180,7 @@ a[href$=".docx"]:before {
 @media screen and (min-width: 80em) {
     
     .main-wrapper {
-        margin-top: 90px;
+        margin-top: 80px;
     }
     
     .boy {
