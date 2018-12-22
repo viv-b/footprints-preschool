@@ -170,14 +170,15 @@ a[href$=".docx"]:before {
 /* 1200 pixels */
 @media screen and (min-width: 75em) {
     
-    .main-wrapper {
-        margin-top: 90px;
-    }
     
 }
 
 /* 1280 pixels */
 @media screen and (min-width: 80em) {
+    
+    .main-wrapper {
+        margin-top: 90px;
+    }
     
     .boy {
         left: -200px;
