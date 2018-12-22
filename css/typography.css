@@ -39,6 +39,9 @@ blockquote {
     color: #666;
     margin-bottom: 2rem;
 }
+blockquote p {
+    margin-bottom: 0;
+}
 
 /* 640 pixels */
 @media screen and (min-width: 40em) {
