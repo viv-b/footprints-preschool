@@ -59,10 +59,10 @@
 }
 .boy {
    position: absolute;
-   left: -200px;
+   left: -150px;
    bottom: -110px;
    z-index: 999;
-   max-width: 450px;
+   max-width: 420px;
 }
 .philosophy {
     position: relative;
@@ -171,6 +171,11 @@ a[href$=".docx"]:before {
 /* 1280 pixels */
 @media screen and (min-width: 80em) {
     
+    .boy {
+        left: -200px;
+        bottom: -110px;
+        max-width: 450px;
+    }
 }
 
 /* 1440 pixels */
