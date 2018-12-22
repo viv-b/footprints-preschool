@@ -94,26 +94,18 @@
     color: #fff;
 }
 
+/* ----------- */
+/* H1 HEADING  */
+/* ----------- */
+
 .main-heading {
     background: #0181fe;
     padding-top: 2rem;
     padding-bottom: 2rem;
+    border: solid 16px #ff722d;
 }
 .main-heading h1 {
     color: #fff;
-}
-.main-heading-sub {
-    height: 16px;
-    background: #ff722d;
-    margin-bottom: 3rem;
-}
-.home .main-heading-sub {
-    margin-bottom: 0;
-}
-.bgd-white {
-    background: #fff;
-    padding: 60px 0;
-    margin-bottom: -110px;
 }
 
 
