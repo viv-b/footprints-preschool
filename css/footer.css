@@ -44,3 +44,6 @@
     margin-bottom: 10px;
     font-size: 3.5rem;
 }
+.footer .footprint {
+   position: absolute; top: -90px; right: -90px; z-index: 999;
+}
