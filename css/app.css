@@ -93,6 +93,9 @@
 .philosophy * {
     color: #fff;
 }
+.staff-photo-container {
+    text-align: center;
+}
 
 /* ----------- */
 /* H1 HEADING  */
@@ -187,7 +190,6 @@ a[href$=".docx"]:before {
     }
     .staff-photo-container {
         margin-right: 20px;
-        text-align: center;
     }
    
 }
