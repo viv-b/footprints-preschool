@@ -159,7 +159,7 @@ a[href$=".docx"]:before {
    
    .main-heading .footprint {
         top: -85px;
-        max-height: auto
+        max-height: auto;
     }
 }
 
