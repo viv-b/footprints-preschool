@@ -22,8 +22,6 @@
 }
 .direction-nav a {
     text-decoration: uppercase;
-    border-top: solid 2px #546a3b;
-    border-bottom: solid 2px #546a3b;
     padding: 5px 8px;
     text-decoration: none !important;
 }
