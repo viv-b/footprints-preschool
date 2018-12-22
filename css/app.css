@@ -112,13 +112,14 @@
 }
 .main-heading .footprint {
     position: absolute;
-    top: -85px;
+    top: -100px;
     right: 0;
     z-index: 999;
     -moz-transform: scale(-1, -1);
     -o-transform: scale(-1, -1);
     -webkit-transform: scale(-1, -1);
     transform: scale(-1, -1);
+    max-height: 100px;
 }
 
 /* -------- */
@@ -156,6 +157,10 @@ a[href$=".docx"]:before {
 /* 640 pixels */
 @media screen and (min-width: 40em) {
    
+   .main-heading .footprint {
+        top: -85px;
+        max-height: auto
+    }
 }
 
 /* 1024 pixels */
