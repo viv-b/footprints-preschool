@@ -100,8 +100,8 @@
 
 .main-heading {
     background: #0181fe;
-    padding-top: 1.7rem;
-    padding-bottom: 1.7rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
     border-bottom: solid 16px #ff722d;
 }
 .main-heading h1 {
@@ -112,7 +112,7 @@
 }
 .main-heading .footprint {
     position: absolute;
-    top: -40px;
+    top: -85px;
     right: 0;
     z-index: 999;
     -moz-transform: scale(-1, -1);
@@ -186,8 +186,13 @@ a[href$=".docx"]:before {
 /* 1440 pixels */
 @media screen and (min-width: 90em) {
     
+    .main-heading {
+        padding-top: 1.7rem;
+        padding-bottom: 1.7rem;
+    }
     .main-heading .footprint {
-        left: -90px;
+        top: ;
+        left: -40px;
         right: auto;
         z-index: 999;
         -moz-transform: scale(1, 1);
