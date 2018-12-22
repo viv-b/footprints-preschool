@@ -158,7 +158,7 @@ a[href$=".docx"]:before {
 @media screen and (min-width: 64em) {
     
     .main-wrapper {
-        margin-top: 65px;
+        margin-top: 60px;
     }
     
     .boy {
@@ -170,6 +170,9 @@ a[href$=".docx"]:before {
 /* 1200 pixels */
 @media screen and (min-width: 75em) {
     
+    .main-wrapper {
+        margin-top: 70px;
+    }
     
 }
 
