@@ -45,5 +45,46 @@
     font-size: 3.5rem;
 }
 .footer .footprint {
-   position: absolute; top: -90px; right: -90px; z-index: 999;
+   position: absolute;
+   top: -90px;
+   right: 0;
+   z-index: 999;
+}
+
+/* 640 pixels */
+@media screen and (min-width: 40em) {
+   
+}
+
+/* 1024 pixels */
+@media screen and (min-width: 64em) {
+
+}
+
+/* 1200 pixels */
+@media screen and (min-width: 75em) {
+    
+    .footer .footprint {
+        top: -90px;
+        right: -90px;
+    }
+}
+
+/* 1280 pixels */
+@media screen and (min-width: 80em) {
+    
+}
+
+/* 1440 pixels */
+@media screen and (min-width: 90em) {
+    
+    .footer .footprint {
+        top: -90px;
+        right: -90px;
+    }
+}
+
+/* 1920 pixels */
+@media screen and (min-width: 120em) {
+
 }
