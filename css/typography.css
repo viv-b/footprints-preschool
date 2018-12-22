@@ -31,7 +31,14 @@ h3 {
 .contact .fa-facebook-square {
     font-size: 3rem;
 }
-
+blockquote {
+    background: #eee;
+    padding: 30px 40px;
+    border-left: solid 15px #ccc;
+    font-size: 150%;
+    color: #666;
+    margin-bottom: 2rem;
+}
 
 /* 640 pixels */
 @media screen and (min-width: 40em) {
