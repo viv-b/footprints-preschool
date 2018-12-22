@@ -171,7 +171,7 @@ a[href$=".docx"]:before {
 @media screen and (min-width: 75em) {
     
     .main-wrapper {
-        margin-top: 65px;
+        margin-top: 90px;
     }
     
 }
