@@ -14,6 +14,9 @@
 .blog .sidebar li.last {
     border-bottom: none;
 }
+.blog .sidebar a.cc-active {
+    font-weight: bold;
+}
 .post-details {
 }
 .direction-nav {
