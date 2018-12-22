@@ -185,6 +185,9 @@ a[href$=".docx"]:before {
         bottom: -110px;
         max-width: 450px;
     }
+    .staff-photo-container {
+        margin-right: 20px;
+    }
    
 }
 
