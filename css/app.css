@@ -191,8 +191,8 @@ a[href$=".docx"]:before {
         padding-bottom: 1.7rem;
     }
     .main-heading .footprint {
-        top: ;
-        left: -40px;
+        top: -40px;
+        left: -90px;
         right: auto;
         z-index: 999;
         -moz-transform: scale(1, 1);
