@@ -102,7 +102,7 @@
     background: #0181fe;
     padding-top: 2rem;
     padding-bottom: 2rem;
-    border: solid 16px #ff722d;
+    border-bottom: solid 16px #ff722d;
 }
 .main-heading h1 {
     color: #fff;
