@@ -108,7 +108,7 @@
     color: #fff;
 }
 .main-heading h1 a {
-    color: #fff;
+    color: #fff !important;
 }
 .main-heading .footprint {
    position: absolute;
