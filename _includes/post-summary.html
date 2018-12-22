@@ -7,7 +7,7 @@
         {% endif %}
         </a>
     </p>
-    <h4><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</h4>
+    <h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</h3>
     {% include post-details.html post=post %}
 	<p>{{ post.content | strip_html | truncatewords: 40,"..." }}</p>
 	 <p><a class="button" href="{{ site.baseurl }}{{ post.url }}">More&hellip;</a></p>
