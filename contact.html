@@ -58,7 +58,7 @@ hero_image: /uploads/hero/hero-pirates-contact.jpg
                 {% assign contact = site.data.contact %}
                     
                 {% if contact.address_description %}
-                    <p>{{ contact.address_description | newline_to_br }}</p>
+                    <p class="lead">{{ contact.address_description | newline_to_br }}</p>
                 {% endif %}
                 
                 {% if contact.phone %}
