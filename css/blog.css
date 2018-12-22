@@ -7,6 +7,7 @@
    display: block;
    padding: 0.5rem 0;
    text-decoration: none;
+   color: #111;
 }
 .blog .sidebar li {
     border-bottom: solid 1px #ccc;
