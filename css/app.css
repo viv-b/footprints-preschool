@@ -62,7 +62,7 @@
    left: -150px;
    bottom: -110px;
    z-index: 999;
-   max-width: 420px;
+   max-width: 350px;
 }
 .philosophy {
     position: relative;
@@ -159,6 +159,10 @@ a[href$=".docx"]:before {
     
     .main-wrapper {
         margin-top: 90px;
+    }
+    
+    .boy {
+        max-width: 420px;
     }
 
 }
