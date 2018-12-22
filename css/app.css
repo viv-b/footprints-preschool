@@ -96,6 +96,9 @@
 .staff-photo-container {
     text-align: center;
 }
+.staff-photo-container img {
+    max-width: 375px;
+}
 
 /* ----------- */
 /* H1 HEADING  */
