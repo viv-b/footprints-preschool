@@ -8,7 +8,7 @@
   overflow: hidden;
   /* Avoid setting width to 100vw or have scrollbar appear bottom of page */ 
   /* width: 100vw; */
-  height: 90vh;
+  height: 80vh;
 }
 
 
