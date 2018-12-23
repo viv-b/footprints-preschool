@@ -8,7 +8,7 @@
   overflow: hidden;
   /* Avoid setting width to 100vw or have scrollbar appear bottom of page */ 
   /* width: 100vw; */
-  height: 100vh;
+  height: 90vh;
 }
 
 
@@ -291,7 +291,7 @@
 @media screen and (min-width: 75em) {
     
     .css-slider-wrapper-outer {
-        height: 90vh;
+        height: 100vh;
     }
     
 }
