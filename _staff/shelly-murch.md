@@ -2,7 +2,7 @@
 name: Shelly Murch
 position:
 image: /uploads/staff/shelly-murch.jpg
-sort_number: 5
+sort_number: 1
 ---
 
 I have been apart of the early childhood sector/industry for the past 18 years, starting as a nanny then going on to achieve a Bachelor of teaching ECE. I have been a tutor for the Open Polytechnic and mentored a number of teachers over the past 18 years.
