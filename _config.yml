@@ -60,7 +60,7 @@ _options:
 
 paginate: 24
 paginate_path: '/blog/:num/'
-permalink: '/:year/:month/:day/:title/'
+permalink: '/blog/:year/:month/:day/:title/'
 
 jekyll-archives:
   enabled:
