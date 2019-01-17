@@ -2,7 +2,7 @@
 name: Susan Lemmens
 position:
 image: /uploads/staff/susan-lemmens-profile.jpg
-sort_number: 3
+sort_number: 6
 ---
 
 Tēna koutou katoa.<br>My name is Susan Lemmens and I am married to Louis who is a social worker. We have three adult children and two grandchildren. Louis and I moved to Waihi 4 years ago from Hamilton. We love the natural beauty of the area and both have happy memories of holidays by the sea, and love living close to the coast. We have a Ducati motorbike and love exploring New Zealand and particularly enjoy the twisty roads of the Coromandel.
