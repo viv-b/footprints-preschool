@@ -1,0 +1,32 @@
+---
+title: Beach Hop
+meta_title:
+description:
+date: 2019-03-27 11:00:00
+summary_image: /uploads/blog/summary/56444250-2288484951410063-7253576992686080000-n.jpg
+photos:
+  - gallery_image:
+    title:
+  - gallery_image:
+    title:
+  - gallery_image:
+    title:
+embed_code:
+hero_image: /uploads/hero/56203722-2504401856271815-2284409082297188352-n.jpg
+_options:
+  summary_image:
+    width: 800
+    height: 1000
+    resize_style: contain
+    expandable: true
+    uploads_dir: uploads/blog/summary
+  gallery_image:
+    width: 1400
+    height: 1400
+    resize_style: contain
+    expandable: true
+    uploads_dir: uploads/blog/gallery
+_section_id: blog
+---
+
+Today we took the children for a walk up to the Waihi Beach Hop. The children had a lovely time looking at all the awesome classic cars. Because walking is such thirsty and tiring work we had to stop in at Eaten Cafe for a fluffy and then at The Platter Board for something yummy to eat. When we got back to Footprints we were visited by two classic cars. The owners were very generous and allowed the children to climb inside them and have a look. Thanks everyone for making this a special day for the children.
