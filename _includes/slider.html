@@ -7,18 +7,18 @@
     <!-- Slider Wrapper -->
     <div class="css-slider-wrapper">
           
-          {% for slide in site.data.settings.slider.slides %}
+          {% for slide in site.data.settings.slides %}
           <input type="radio" name="slider" class="slide-radio{{ forloop.index }}" id="slider_{{ forloop.index }}" />
           {% endfor %}
     
           <!-- Slider Pagination -->
           <div class="slider-pagination">
-            {% for slide in site.data.settings.slider.slides %}
+            {% for slide in site.data.settings.slides %}
             <label for="slider_{{ forloop.index }}" class="page{{ forloop.index }}"></label>
             {% endfor %}
           </div>
           
-          {% for slide in site.data.settings.slider.slides %}
+          {% for slide in site.data.settings.slides %}
     
           <div class="css-slider slide-{{ forloop.index }}" style="{% if slide.image %}background-image: url('{{ site.baseurl }}{{ slide.image }}');{% endif %}">
 
