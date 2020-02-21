@@ -2,24 +2,31 @@ links:
   - name: Home
     link: /
     pages_collection:
+    hide: false
   - name: About
     link: /about/
     pages_collection:
+    hide: false
   - name: The Journey
     link: /the-journey/
     pages_collection:
+    hide: false
   - name: Nature
     link: /nature/
     pages_collection:
+    hide: true
   - name: Whanāu Info
     link: /whanau/
     pages_collection:
+    hide: false
   - name: Fees
     link: /fees/
     pages_collection:
+    hide: false
   - name: News
     link: /blog/
     pages_collection: blog
+    hide: true
   - name: Contact
     link: /contact/
     pages_collection:
