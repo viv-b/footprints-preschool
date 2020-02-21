@@ -1,5 +1,5 @@
 ---
-name: Kayla Armstrong
+name: Kayla
 position:
 image:
 sort_number: 5
