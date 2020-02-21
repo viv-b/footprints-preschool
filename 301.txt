@@ -1,3 +1,4 @@
 /nature/ /
 /blog/ /
 /blog/2019/03/27/beach-hop/ /
+/blog/2018/12/22/christmas-2018/ /
