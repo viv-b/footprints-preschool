@@ -30,3 +30,4 @@ links:
   - name: Contact
     link: /contact/
     pages_collection:
+    hide: false
