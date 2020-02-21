@@ -7,7 +7,8 @@ from: Viv Taken from https://mikeybeck.com/SEO/jekyll-seo/sitemap/
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   {% for post in site.posts %}
     {% unless post.published == false %}
-    <!-- <url>
+    {% comment %}
+    <url>
       <loc>{{ site.url }}{{ post.url }}</loc>
       {% if post.sitemap.lastmod %}
         <lastmod>{{ post.sitemap.lastmod | date: "%Y-%m-%d" }}</lastmod>
@@ -26,7 +27,8 @@ from: Viv Taken from https://mikeybeck.com/SEO/jekyll-seo/sitemap/
       {% else %}
         <priority>0.5</priority>
       {% endif %}
-    </url> -->
+    </url>
+    {% endcomment %}
     {% endunless %}
   {% endfor %}
   {% for page in site.pages %}
