@@ -9,16 +9,20 @@
     </li>
       
     {% for link in site.data.navigation.links %}
-        
-        {% assign class = "" %}
     
-        {% if link.link == page.url %}
-            {% assign class = class | append: " active" %}
+        {% if link.hide != true %}
+        
+            {% assign class = "" %}
+        
+            {% if link.link == page.url %}
+                {% assign class = class | append: " active" %}
+            {% endif %}
+                    
+            <li class="{{ class }}">
+                <a href="{{ site.baseurl }}{{ link.link }}">{{ link.name }}</a>
+            </li>
+          
         {% endif %}
-                
-        <li class="{{ class }}">
-            <a href="{{ site.baseurl }}{{ link.link }}">{{ link.name }}</a>
-        </li>
           
     {% endfor %}
             
