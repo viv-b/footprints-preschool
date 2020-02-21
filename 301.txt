@@ -1,5 +1,3 @@
 /nature/ /
-
 /blog/ /
-
 /blog/* /
