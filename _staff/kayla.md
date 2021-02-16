@@ -1,7 +1,7 @@
 ---
 name: Kayla
 position:
-image: /uploads/head-1.png
+image: /uploads/kayla.jpeg
 sort_number: 5
 ---
 
