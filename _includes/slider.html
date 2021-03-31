@@ -20,7 +20,7 @@
           
           {% for slide in site.data.settings.slides %}
     
-          <div class="css-slider slide-{{ forloop.index }}" style="{% if slide.image %}background-image: url('{{ site.baseurl }}{{ slide.slider_image }}');{% endif %}">
+          <div class="css-slider slide-{{ forloop.index }}" style="{% if slide.slider_image %}background-image: url('{{ site.baseurl }}{{ slide.slider_image }}');{% endif %}">
 
             <div class="slider-content">
                 <div class="inner">
