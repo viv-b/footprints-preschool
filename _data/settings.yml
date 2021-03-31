@@ -1,20 +1,20 @@
 slides:
-  - image: /uploads/slider/view-to-back-resized.jpg
+  - slider_image: /uploads/slider/view-to-back-resized.jpg
     title: 'Learning impressions, lasting for life.'
     sub_title: 'Footprints Preschool, Waihi'
-  - image: /uploads/slider/over-2-room-resized.jpg
+  - slider_image: /uploads/slider/over-2-room-resized.jpg
     title: 'Building relationships, so...'
     sub_title: 'Footprints Preschool, Waihi'
-  - image: /uploads/slider/mud-kitchen-cropped-resized.jpg
+  - slider_image: /uploads/slider/mud-kitchen-cropped-resized.jpg
     title: 'Confidence grows, so...'
     sub_title: 'Footprints Preschool, Waihi'
-  - image: /uploads/slider/water-and-sand-resized.jpg
+  - slider_image: /uploads/slider/water-and-sand-resized.jpg
     title: 'Play abounds, so...'
     sub_title: 'Footprints Preschool, Waihi'
-  - image: /uploads/slider/under-2-room-1-resized.jpg
+  - slider_image: /uploads/slider/under-2-room-1-resized.jpg
     title: 'You feel at home, so...'
     sub_title: 'Footprints Preschool, Waihi'
-  - image: /uploads/slider/unders-sandpit-resized.jpg
+  - slider_image: /uploads/slider/unders-sandpit-resized.jpg
     title: The world is yours.
     sub_title: 'Footprints Preschool, Waihi'
 address_description: |-
